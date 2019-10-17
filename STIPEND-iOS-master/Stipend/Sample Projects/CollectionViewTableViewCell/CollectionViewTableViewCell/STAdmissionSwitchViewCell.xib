@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AdmissionSwitchViewIdentifier" rowHeight="44" id="KGk-i7-Jjw" customClass="STAdmissionSwitchViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.84999999999999987" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4HX-TV-dyt" userLabel="SeparatorView">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="28S-eH-ie5"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nu7-gV-1gG">
+                        <rect key="frame" x="10" y="11" width="246" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-Je-9EO">
+                        <rect key="frame" x="261" y="6" width="51" height="31"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="nu7-gV-1gG" secondAttribute="centerY" id="5Jm-ni-fE9"/>
+                    <constraint firstAttribute="centerY" secondItem="wdS-Je-9EO" secondAttribute="centerY" id="EFZ-Li-kQq"/>
+                    <constraint firstItem="4HX-TV-dyt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TMw-0P-5eS"/>
+                    <constraint firstItem="nu7-gV-1gG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WAr-vB-47p"/>
+                    <constraint firstAttribute="trailing" secondItem="wdS-Je-9EO" secondAttribute="trailing" constant="10" id="XpF-Qk-xmd"/>
+                    <constraint firstAttribute="trailing" secondItem="4HX-TV-dyt" secondAttribute="trailing" id="dYA-bb-bj3"/>
+                    <constraint firstAttribute="bottom" secondItem="4HX-TV-dyt" secondAttribute="bottom" id="oEq-Hj-EQK"/>
+                    <constraint firstItem="wdS-Je-9EO" firstAttribute="leading" secondItem="nu7-gV-1gG" secondAttribute="trailing" constant="5" id="sOD-jf-Bzs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ibLabelLeadingSpaceConstraint" destination="WAr-vB-47p" id="Bow-mt-Ogr"/>
+                <outlet property="ibLabelValue" destination="nu7-gV-1gG" id="XKf-xD-gtH"/>
+                <outlet property="ibSeparatorLineView" destination="4HX-TV-dyt" id="VIC-Zo-yOd"/>
+            </connections>
+            <point key="canvasLocation" x="229" y="181"/>
+        </tableViewCell>
+    </objects>
+</document>

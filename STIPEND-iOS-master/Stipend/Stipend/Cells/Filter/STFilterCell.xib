@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="STFilterCell" rowHeight="67" id="KGk-i7-Jjw" customClass="STFilterCell">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="al6-Py-yyg">
+                        <rect key="frame" x="15" y="22" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="20Y-Vs-Df8"/>
+                            <constraint firstAttribute="width" constant="60" id="gd5-aV-yU2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cxl-W2-EUh">
+                        <rect key="frame" x="95" y="22" width="282" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ghw-q5-cqx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="cxl-W2-EUh" secondAttribute="centerY" id="2KU-iy-CjX"/>
+                    <constraint firstItem="al6-Py-yyg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="S9e-GN-Mg4"/>
+                    <constraint firstAttribute="centerY" secondItem="al6-Py-yyg" secondAttribute="centerY" id="bbn-yT-vtm"/>
+                    <constraint firstItem="cxl-W2-EUh" firstAttribute="leading" secondItem="al6-Py-yyg" secondAttribute="trailing" constant="20" id="nUc-cq-Sxa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cxl-W2-EUh" secondAttribute="trailing" constant="5" id="oxW-x6-qBh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="al6-Py-yyg" id="LrG-ay-HW2"/>
+                <outlet property="titleWidthConstraint" destination="gd5-aV-yU2" id="a9A-PQ-iVF"/>
+                <outlet property="valueLabel" destination="cxl-W2-EUh" id="sua-cl-j54"/>
+            </connections>
+            <point key="canvasLocation" x="411" y="201.5"/>
+        </tableViewCell>
+    </objects>
+</document>

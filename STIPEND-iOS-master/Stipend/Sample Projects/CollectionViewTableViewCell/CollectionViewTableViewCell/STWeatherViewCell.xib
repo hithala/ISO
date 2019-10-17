@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherViewCellIdentifier" rowHeight="142" id="KGk-i7-Jjw" customClass="STWeatherViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2015-06-12 at 3.11.00 pm.png" translatesAutoresizingMaskIntoConstraints="NO" id="wtu-qM-lFZ">
+                        <rect key="frame" x="70" y="31" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="PSR-eh-NEU"/>
+                            <constraint firstAttribute="height" constant="80" id="jRV-pS-zNX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1B-FI-sB4">
+                        <rect key="frame" x="165" y="31" width="33" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party Cloudy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rv6-2l-V7H">
+                        <rect key="frame" x="165" y="75" width="119" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="wtu-qM-lFZ" secondAttribute="centerY" id="8Am-v8-RU4"/>
+                    <constraint firstItem="K1B-FI-sB4" firstAttribute="leading" secondItem="wtu-qM-lFZ" secondAttribute="trailing" constant="15" id="Iak-Kg-Eoz"/>
+                    <constraint firstItem="wtu-qM-lFZ" firstAttribute="top" secondItem="K1B-FI-sB4" secondAttribute="top" id="N3U-QT-8Kr"/>
+                    <constraint firstItem="rv6-2l-V7H" firstAttribute="top" secondItem="K1B-FI-sB4" secondAttribute="bottom" constant="8" id="WLf-po-AgT"/>
+                    <constraint firstItem="K1B-FI-sB4" firstAttribute="leading" secondItem="rv6-2l-V7H" secondAttribute="leading" id="dN9-VM-2eE"/>
+                    <constraint firstItem="wtu-qM-lFZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="70" id="ncL-97-isA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="232.5" y="215"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Screen Shot 2015-06-12 at 3.11.00 pm.png" width="194" height="178"/>
+    </resources>
+</document>

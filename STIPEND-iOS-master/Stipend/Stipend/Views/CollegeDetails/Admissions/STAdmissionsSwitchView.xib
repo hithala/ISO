@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STAdmissionsSwitchView">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ku-YG-Wfr" userLabel="SeparatorView">
+                    <rect key="frame" x="0.0" y="49" width="343" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="c5q-Gl-QsU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgD-Xf-6xn">
+                    <rect key="frame" x="233" y="13" width="100" height="25"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge_positive" translatesAutoresizingMaskIntoConstraints="NO" id="keB-JA-nPb">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="25"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hq-4w-zgj">
+                            <rect key="frame" x="10" y="2" width="65" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="lWN-oU-L1R"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="6Hq-4w-zgj" secondAttribute="centerY" id="DSY-Dv-LoV"/>
+                        <constraint firstAttribute="trailing" secondItem="6Hq-4w-zgj" secondAttribute="trailing" constant="25" id="Diy-So-Xty"/>
+                        <constraint firstAttribute="trailing" secondItem="keB-JA-nPb" secondAttribute="trailing" id="OW5-2E-T7R"/>
+                        <constraint firstItem="6Hq-4w-zgj" firstAttribute="leading" secondItem="UgD-Xf-6xn" secondAttribute="leading" constant="10" id="RyG-ZV-ueY"/>
+                        <constraint firstItem="keB-JA-nPb" firstAttribute="top" secondItem="UgD-Xf-6xn" secondAttribute="top" id="Sac-lv-ySQ"/>
+                        <constraint firstItem="keB-JA-nPb" firstAttribute="leading" secondItem="UgD-Xf-6xn" secondAttribute="leading" id="SlQ-35-aSn"/>
+                        <constraint firstAttribute="bottom" secondItem="keB-JA-nPb" secondAttribute="bottom" id="ln7-uZ-Lb9"/>
+                        <constraint firstAttribute="height" constant="25" id="s3C-cJ-wGp"/>
+                        <constraint firstAttribute="width" constant="100" id="z87-B6-RmX"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhu-Fr-04t">
+                    <rect key="frame" x="15" y="13" width="213" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="wdh-gX-61q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                    <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8ku-YG-Wfr" secondAttribute="trailing" id="D18-vh-l2c"/>
+                <constraint firstAttribute="centerY" secondItem="UgD-Xf-6xn" secondAttribute="centerY" id="KJK-6c-gOt"/>
+                <constraint firstItem="UgD-Xf-6xn" firstAttribute="leading" secondItem="qhu-Fr-04t" secondAttribute="trailing" constant="5" id="TZv-Er-Onk"/>
+                <constraint firstAttribute="trailing" secondItem="UgD-Xf-6xn" secondAttribute="trailing" constant="10" id="dRd-CL-WlR"/>
+                <constraint firstItem="8ku-YG-Wfr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hbf-8q-gMx"/>
+                <constraint firstAttribute="centerY" secondItem="qhu-Fr-04t" secondAttribute="centerY" id="oZL-hL-Q6J"/>
+                <constraint firstItem="qhu-Fr-04t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="s9a-bb-pFd"/>
+                <constraint firstAttribute="bottom" secondItem="8ku-YG-Wfr" secondAttribute="bottom" id="yaQ-yJ-J9n"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="badgeImageView" destination="keB-JA-nPb" id="he0-7s-oRi"/>
+                <outlet property="badgeLabel" destination="6Hq-4w-zgj" id="n3A-bW-Zcr"/>
+                <outlet property="badgeViewWidthConstraint" destination="z87-B6-RmX" id="CsO-rN-xyo"/>
+                <outlet property="cellSeparatorHeightConstraint" destination="c5q-Gl-QsU" id="7Pg-Cz-Eq3"/>
+                <outlet property="cellSeparatorLeadingSpaceConstraint" destination="hbf-8q-gMx" id="fDn-Cp-Vja"/>
+                <outlet property="ibLabelLeadingSpaceConstraint" destination="s9a-bb-pFd" id="i4g-Fu-IsU"/>
+                <outlet property="ibLabelValue" destination="qhu-Fr-04t" id="4qg-kX-Khw"/>
+                <outlet property="ibSeparatorLineView" destination="8ku-YG-Wfr" id="W3j-Og-6ew"/>
+            </connections>
+            <point key="canvasLocation" x="404.5" y="24"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="badge_positive" width="38" height="25"/>
+    </resources>
+</document>

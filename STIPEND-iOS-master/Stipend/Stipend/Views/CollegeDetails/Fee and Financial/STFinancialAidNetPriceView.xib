@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LcS-Zm-iba" customClass="STFinancialAidNetPriceView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSn-kO-Nis" userLabel="Seperator View">
+                    <rect key="frame" x="0.0" y="99" width="400" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="DZp-W2-AEL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bps-Ho-V28" userLabel="LeftView">
+                    <rect key="frame" x="15" y="25" width="107" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$40000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpf-Cj-YM1">
+                            <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="FrP-iG-CHk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                            <color key="textColor" red="0.19198027249999999" green="0.1919745356" blue="0.19197782869999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Net Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fAk-rx-pNe">
+                            <rect key="frame" x="0.0" y="30" width="107" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="u2e-Wm-lRc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="13"/>
+                            <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="rpf-Cj-YM1" firstAttribute="top" secondItem="bps-Ho-V28" secondAttribute="top" id="3wa-3j-YRz"/>
+                        <constraint firstAttribute="trailing" secondItem="rpf-Cj-YM1" secondAttribute="trailing" id="D12-Ll-vgd"/>
+                        <constraint firstItem="rpf-Cj-YM1" firstAttribute="leading" secondItem="bps-Ho-V28" secondAttribute="leading" id="JeU-cF-3ZP"/>
+                        <constraint firstAttribute="trailing" secondItem="fAk-rx-pNe" secondAttribute="trailing" id="N5Z-rD-ymf"/>
+                        <constraint firstItem="fAk-rx-pNe" firstAttribute="leading" secondItem="bps-Ho-V28" secondAttribute="leading" id="WLX-5S-kIz"/>
+                        <constraint firstAttribute="height" constant="50" id="gCR-W4-mD9"/>
+                        <constraint firstAttribute="bottom" secondItem="fAk-rx-pNe" secondAttribute="bottom" id="yBX-L1-jer"/>
+                    </constraints>
+                </view>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question_mark" translatesAutoresizingMaskIntoConstraints="NO" id="9BC-lv-CYb">
+                    <rect key="frame" x="127" y="56" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="18" id="ONR-yF-SqC"/>
+                        <constraint firstAttribute="height" constant="18" id="oBT-vg-Iqs"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WSn-kO-Nis" firstAttribute="leading" secondItem="LcS-Zm-iba" secondAttribute="leading" id="1k2-2E-ED7"/>
+                <constraint firstAttribute="trailing" secondItem="WSn-kO-Nis" secondAttribute="trailing" id="HML-bU-RgP"/>
+                <constraint firstItem="9BC-lv-CYb" firstAttribute="leading" secondItem="bps-Ho-V28" secondAttribute="trailing" constant="5" id="MIn-gU-mrP"/>
+                <constraint firstAttribute="centerY" secondItem="bps-Ho-V28" secondAttribute="centerY" id="cec-Jg-O71"/>
+                <constraint firstAttribute="bottom" secondItem="WSn-kO-Nis" secondAttribute="bottom" id="tXO-Or-1Y2"/>
+                <constraint firstItem="bps-Ho-V28" firstAttribute="leading" secondItem="LcS-Zm-iba" secondAttribute="leading" constant="15" id="wXd-ej-8Jw"/>
+                <constraint firstItem="9BC-lv-CYb" firstAttribute="centerY" secondItem="fAk-rx-pNe" secondAttribute="centerY" id="wan-Fj-NvF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="mn3-yK-Z9d"/>
+            <connections>
+                <outlet property="cellSeparatorHeightConstraint" destination="DZp-W2-AEL" id="021-z8-HiZ"/>
+                <outlet property="fieldLabel" destination="fAk-rx-pNe" id="6LK-KF-NBa"/>
+                <outlet property="fieldValue" destination="rpf-Cj-YM1" id="nKv-yd-xBP"/>
+                <outlet property="questionmarkView" destination="9BC-lv-CYb" id="0zf-a3-rMs"/>
+            </connections>
+            <point key="canvasLocation" x="67" y="-68"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="question_mark" width="25" height="25"/>
+    </resources>
+</document>

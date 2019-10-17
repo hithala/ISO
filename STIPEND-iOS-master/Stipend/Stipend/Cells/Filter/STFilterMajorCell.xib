@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="STFilterMajorCell" id="KGk-i7-Jjw" customClass="STFilterMajorCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compare_select_inactive" translatesAutoresizingMaskIntoConstraints="NO" id="jk1-eX-LH4">
+                        <rect key="frame" x="261" y="9.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="lfP-pH-6Jp"/>
+                            <constraint firstAttribute="width" constant="25" id="vNw-aO-JEG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GML-6L-jEf">
+                        <rect key="frame" x="201" y="11.5" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Ep7-e6-rxC"/>
+                            <constraint firstAttribute="width" constant="60" id="pbW-hG-qly"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="13"/>
+                        <color key="textColor" red="0.25882352939999997" green="0.77647058820000003" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-vg-jeu">
+                        <rect key="frame" x="10" y="10" width="181" height="23"/>
+                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                        <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UVX-vg-jeu" secondAttribute="bottom" constant="10" id="4Nl-Aa-Zlg"/>
+                    <constraint firstItem="GML-6L-jEf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9mM-Z5-3M5"/>
+                    <constraint firstItem="jk1-eX-LH4" firstAttribute="leading" secondItem="GML-6L-jEf" secondAttribute="trailing" id="AAm-b1-9oa"/>
+                    <constraint firstItem="UVX-vg-jeu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EEA-fX-8mZ"/>
+                    <constraint firstAttribute="trailing" secondItem="jk1-eX-LH4" secondAttribute="trailing" id="F2P-ER-vfS"/>
+                    <constraint firstItem="GML-6L-jEf" firstAttribute="leading" secondItem="UVX-vg-jeu" secondAttribute="trailing" constant="10" id="Hyd-Gb-rDF"/>
+                    <constraint firstItem="jk1-eX-LH4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dxt-1U-bio"/>
+                    <constraint firstItem="UVX-vg-jeu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wIc-Pz-At7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="countLabel" destination="GML-6L-jEf" id="8GD-hS-Pgu"/>
+                <outlet property="countLabelWidthConstraint" destination="pbW-hG-qly" id="gA2-nE-03k"/>
+                <outlet property="selectionImageView" destination="jk1-eX-LH4" id="8xQ-RJ-dD7"/>
+                <outlet property="selectionImageviewTrailingConstraint" destination="F2P-ER-vfS" id="BJk-cH-Ow5"/>
+                <outlet property="selectionImageviewWidthConstraint" destination="vNw-aO-JEG" id="luQ-UF-4pP"/>
+                <outlet property="titleLabel" destination="UVX-vg-jeu" id="LWA-y7-TvT"/>
+            </connections>
+            <point key="canvasLocation" x="231" y="-377"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="compare_select_inactive" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="STIntendedStudyDetailsCell" rowHeight="100" id="KGk-i7-Jjw" customClass="STIntendedStudyDetailsCell">
+            <rect key="frame" x="0.0" y="0.0" width="471" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="471" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student:Faculty Ratio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ip-ND-Ixq">
+                        <rect key="frame" x="14" y="22" width="173" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="173" id="R4L-zH-t3J"/>
+                            <constraint firstAttribute="height" constant="25" id="kZP-Gr-pwP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <color key="textColor" red="0.42667588591575623" green="0.4266631007194519" blue="0.42667034268379211" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkY-1w-nOG" userLabel="Seperator View">
+                        <rect key="frame" x="0.0" y="68" width="471" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="czy-1C-cEw"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sI-pJ-8Xf">
+                        <rect key="frame" x="356" y="22" width="100" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="K0p-Ls-WJv"/>
+                            <constraint firstAttribute="width" constant="100" id="McK-FU-g0s"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="Mj0-Xr-BqL"/>
+                            <constraint firstAttribute="width" constant="100" id="nAx-hK-Qh5"/>
+                            <constraint firstAttribute="height" constant="25" id="nte-wG-12M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                        <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mj0-Xr-BqL"/>
+                                <exclude reference="nAx-hK-Qh5"/>
+                                <exclude reference="nte-wG-12M"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5Ip-ND-Ixq" firstAttribute="width" secondItem="0sI-pJ-8Xf" secondAttribute="width" id="6lx-8f-60E"/>
+                    <constraint firstItem="0sI-pJ-8Xf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EJg-2h-kNz"/>
+                    <constraint firstItem="5Ip-ND-Ixq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="Jh3-Co-W1C"/>
+                    <constraint firstItem="5Ip-ND-Ixq" firstAttribute="top" secondItem="0sI-pJ-8Xf" secondAttribute="bottom" constant="5" id="K6Z-DM-Z5E"/>
+                    <constraint firstAttribute="trailing" secondItem="0sI-pJ-8Xf" secondAttribute="trailing" constant="15" id="L7B-VW-Yrv"/>
+                    <constraint firstAttribute="trailing" secondItem="gkY-1w-nOG" secondAttribute="trailing" id="LoA-3g-G8R"/>
+                    <constraint firstAttribute="trailing" secondItem="0sI-pJ-8Xf" secondAttribute="trailing" constant="15" id="PkW-dM-JD3"/>
+                    <constraint firstAttribute="centerY" secondItem="5Ip-ND-Ixq" secondAttribute="centerY" id="RVY-tm-t9a"/>
+                    <constraint firstAttribute="centerY" secondItem="0sI-pJ-8Xf" secondAttribute="centerY" id="SED-Pw-QUd"/>
+                    <constraint firstAttribute="bottom" secondItem="gkY-1w-nOG" secondAttribute="bottom" id="Ukv-8S-wiz"/>
+                    <constraint firstItem="0sI-pJ-8Xf" firstAttribute="leading" secondItem="5Ip-ND-Ixq" secondAttribute="trailing" constant="20" id="bAb-um-G8x"/>
+                    <constraint firstItem="5Ip-ND-Ixq" firstAttribute="leading" secondItem="0sI-pJ-8Xf" secondAttribute="leading" id="ceo-iZ-dJB"/>
+                    <constraint firstItem="5Ip-ND-Ixq" firstAttribute="height" secondItem="0sI-pJ-8Xf" secondAttribute="height" multiplier="1:2" id="f7J-Na-zIa"/>
+                    <constraint firstAttribute="trailing" secondItem="0sI-pJ-8Xf" secondAttribute="trailing" constant="20" id="i7W-N2-9xf"/>
+                    <constraint firstItem="gkY-1w-nOG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mY1-Ji-4r8"/>
+                    <constraint firstAttribute="centerY" secondItem="0sI-pJ-8Xf" secondAttribute="centerY" id="r1Z-KB-Crr"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="6lx-8f-60E"/>
+                        <exclude reference="K6Z-DM-Z5E"/>
+                        <exclude reference="ceo-iZ-dJB"/>
+                        <exclude reference="f7J-Na-zIa"/>
+                        <exclude reference="EJg-2h-kNz"/>
+                        <exclude reference="L7B-VW-Yrv"/>
+                        <exclude reference="SED-Pw-QUd"/>
+                        <exclude reference="bAb-um-G8x"/>
+                        <exclude reference="i7W-N2-9xf"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="StudentFacultyRatioLabel" destination="5Ip-ND-Ixq" id="db2-7Y-48O"/>
+                <outlet property="StudentFacultyRatioValue" destination="0sI-pJ-8Xf" id="IcV-fc-rBU"/>
+                <outlet property="cellSeparatorHeightConstraint" destination="czy-1C-cEw" id="XGH-jr-Uhu"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="-59"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STOtherDatesView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wB0-F6-XOs" userLabel="FirstHalfDayLabel">
+                    <rect key="frame" x="15" y="10" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="1b2-NS-HYi"/>
+                        <constraint firstAttribute="height" constant="33" id="3BV-5d-0I9"/>
+                        <constraint firstAttribute="width" secondItem="wB0-F6-XOs" secondAttribute="height" multiplier="5:5" id="CSz-YU-ta4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                    <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="CSz-YU-ta4"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0O-gy-bdy" userLabel="FirstButton">
+                    <rect key="frame" x="15" y="5" width="32" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="49Y-em-aDE"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="R4i-dN-KJ9" userLabel="FirstHalfMonthLabel">
+                    <rect key="frame" x="15" y="40" width="32" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="1c6-OZ-q4G"/>
+                        <constraint firstAttribute="height" constant="20" id="H5y-gn-a6y"/>
+                        <constraint firstAttribute="width" secondItem="R4i-dN-KJ9" secondAttribute="height" multiplier="11:7" id="Y1s-aM-RHd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Y1s-aM-RHd"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="SAT Scores Due" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IKW-kA-Gvh" userLabel="FIrstHalfLabel">
+                    <rect key="frame" x="63" y="10" width="297" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NtD-76-ai3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8J-CC-LNP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onCalenderButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="4fc-K7-i8H"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IKW-kA-Gvh" secondAttribute="trailing" constant="15" id="4Zx-zJ-zfX"/>
+                <constraint firstItem="wB0-F6-XOs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="4ns-li-c7s"/>
+                <constraint firstItem="v0O-gy-bdy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="5Yp-QQ-dQs"/>
+                <constraint firstItem="wB0-F6-XOs" firstAttribute="top" secondItem="v0O-gy-bdy" secondAttribute="top" id="5cR-CG-bJM"/>
+                <constraint firstItem="v0O-gy-bdy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="5wB-AC-UCL"/>
+                <constraint firstItem="v0O-gy-bdy" firstAttribute="trailing" secondItem="R4i-dN-KJ9" secondAttribute="trailing" id="9Uv-86-98C"/>
+                <constraint firstItem="V8J-CC-LNP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EWh-cs-MQe"/>
+                <constraint firstItem="wB0-F6-XOs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="J3V-NQ-Apv"/>
+                <constraint firstItem="R4i-dN-KJ9" firstAttribute="centerX" secondItem="wB0-F6-XOs" secondAttribute="centerX" id="Jjy-gR-HiC"/>
+                <constraint firstItem="R4i-dN-KJ9" firstAttribute="top" secondItem="wB0-F6-XOs" secondAttribute="bottom" constant="-3" id="Jp1-5F-UrW"/>
+                <constraint firstItem="R4i-dN-KJ9" firstAttribute="top" secondItem="wB0-F6-XOs" secondAttribute="bottom" constant="-4" id="Kpm-9L-vCO"/>
+                <constraint firstAttribute="bottom" secondItem="v0O-gy-bdy" secondAttribute="bottom" constant="5" id="NjL-rt-Uxa"/>
+                <constraint firstAttribute="bottom" secondItem="V8J-CC-LNP" secondAttribute="bottom" id="QOf-XM-h18"/>
+                <constraint firstAttribute="trailing" secondItem="V8J-CC-LNP" secondAttribute="trailing" id="RFK-GF-lgG"/>
+                <constraint firstAttribute="bottom" secondItem="R4i-dN-KJ9" secondAttribute="bottom" constant="10" id="S6b-gg-CLm"/>
+                <constraint firstAttribute="centerY" secondItem="IKW-kA-Gvh" secondAttribute="centerY" id="TmX-wu-cUZ"/>
+                <constraint firstItem="IKW-kA-Gvh" firstAttribute="leading" secondItem="wB0-F6-XOs" secondAttribute="trailing" constant="15" id="WkV-TG-K9H"/>
+                <constraint firstItem="V8J-CC-LNP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YKv-JZ-Ueg"/>
+                <constraint firstItem="IKW-kA-Gvh" firstAttribute="leading" secondItem="wB0-F6-XOs" secondAttribute="trailing" constant="5" id="h45-aA-XxH"/>
+                <constraint firstItem="v0O-gy-bdy" firstAttribute="bottom" secondItem="R4i-dN-KJ9" secondAttribute="bottom" id="i16-FE-FdZ"/>
+                <constraint firstItem="v0O-gy-bdy" firstAttribute="leading" secondItem="R4i-dN-KJ9" secondAttribute="leading" id="pgE-h8-OzF"/>
+                <constraint firstItem="IKW-kA-Gvh" firstAttribute="leading" secondItem="R4i-dN-KJ9" secondAttribute="trailing" constant="5" id="pl3-E1-0Or"/>
+                <constraint firstItem="R4i-dN-KJ9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="qUY-h5-gPa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9Uv-86-98C"/>
+                    <exclude reference="i16-FE-FdZ"/>
+                    <exclude reference="pgE-h8-OzF"/>
+                    <exclude reference="5cR-CG-bJM"/>
+                    <exclude reference="Jjy-gR-HiC"/>
+                    <exclude reference="Jp1-5F-UrW"/>
+                    <exclude reference="Kpm-9L-vCO"/>
+                    <exclude reference="h45-aA-XxH"/>
+                    <exclude reference="pl3-E1-0Or"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="addEventButton" destination="V8J-CC-LNP" id="pe1-eH-8rg"/>
+                <outlet property="dayLabel" destination="wB0-F6-XOs" id="qBG-gY-s0z"/>
+                <outlet property="monthLabel" destination="R4i-dN-KJ9" id="uvJ-wn-Gj4"/>
+                <outlet property="valueLabel" destination="IKW-kA-Gvh" id="O5K-aB-VJP"/>
+            </connections>
+            <point key="canvasLocation" x="324.5" y="14"/>
+        </view>
+    </objects>
+</document>

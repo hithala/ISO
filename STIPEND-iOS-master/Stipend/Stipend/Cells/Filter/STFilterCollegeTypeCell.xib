@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+            <string>Avenir-Roman</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="STFilterCollegeTypeCell" rowHeight="397" id="KGk-i7-Jjw" customClass="STFilterCollegeTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="370"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="411" height="369.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TYPE OF COLLEGE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91E-2z-OrD">
+                        <rect key="frame" x="15" y="8" width="361" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="gA2-oa-eAe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                        <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gr9-S8-1MP" userLabel="University View">
+                        <rect key="frame" x="90" y="37" width="100" height="100"/>
+                        <subviews>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyI-g8-msC">
+                                <rect key="frame" x="25" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7LH-A9-hui"/>
+                                    <constraint firstAttribute="width" constant="50" id="Vuy-fo-XXs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="hsR-0Z-sA8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="zuX-5u-hcg"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="filter_uni_inactive">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" image="filter_uni_active"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hsR-0Z-sA8"/>
+                                        <exclude reference="zuX-5u-hcg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onCollegeTypeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ToP-4Q-rFJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j23-1y-SpP">
+                                <rect key="frame" x="10" y="78" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="5Od-yq-yeG"/>
+                                    <constraint firstAttribute="height" constant="21" id="8Va-xB-qTn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Rmb-fP-avM"/>
+                                    <constraint firstAttribute="width" constant="80" id="rHi-Ly-u6S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5Od-yq-yeG"/>
+                                        <exclude reference="Rmb-fP-avM"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vyI-g8-msC" firstAttribute="leading" secondItem="Gr9-S8-1MP" secondAttribute="leading" constant="25" id="6Eh-RG-tJC"/>
+                            <constraint firstAttribute="height" constant="100" id="MNB-6i-ETw"/>
+                            <constraint firstItem="j23-1y-SpP" firstAttribute="leading" secondItem="Gr9-S8-1MP" secondAttribute="leading" constant="10" id="NJp-3P-w4V"/>
+                            <constraint firstItem="j23-1y-SpP" firstAttribute="top" secondItem="vyI-g8-msC" secondAttribute="bottom" constant="8" id="hMH-ii-y9g"/>
+                            <constraint firstItem="vyI-g8-msC" firstAttribute="top" secondItem="Gr9-S8-1MP" secondAttribute="top" constant="20" id="kir-mO-3cg"/>
+                            <constraint firstAttribute="width" constant="100" id="tOq-OE-QwH"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLq-6F-zn0" userLabel="College View">
+                        <rect key="frame" x="222" y="37" width="100" height="100"/>
+                        <subviews>
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJk-at-PTY">
+                                <rect key="frame" x="25" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="FJT-IZ-Dg4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="HTO-XW-dgm"/>
+                                    <constraint firstAttribute="height" constant="50" id="fWI-Ws-PFO"/>
+                                    <constraint firstAttribute="width" constant="50" id="uf1-dh-WVb"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="filter_college_inactive">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" image="filter_college_active"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FJT-IZ-Dg4"/>
+                                        <exclude reference="HTO-XW-dgm"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onCollegeTypeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EZh-IP-CHI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="College" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6T-cw-Gjk">
+                                <rect key="frame" x="10" y="78" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="RAe-cH-aLn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="VzS-fG-6BF"/>
+                                    <constraint firstAttribute="height" constant="21" id="diu-cN-MUZ"/>
+                                    <constraint firstAttribute="width" constant="80" id="qfH-xI-fIo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RAe-cH-aLn"/>
+                                        <exclude reference="VzS-fG-6BF"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j6T-cw-Gjk" firstAttribute="leading" secondItem="BLq-6F-zn0" secondAttribute="leading" constant="10" id="0yp-Kd-hYI"/>
+                            <constraint firstAttribute="height" constant="100" id="AQ4-O4-wp5"/>
+                            <constraint firstItem="wJk-at-PTY" firstAttribute="leading" secondItem="BLq-6F-zn0" secondAttribute="leading" constant="25" id="HR0-SQ-A6u"/>
+                            <constraint firstItem="j6T-cw-Gjk" firstAttribute="top" secondItem="wJk-at-PTY" secondAttribute="bottom" constant="8" id="dLb-cR-ptX"/>
+                            <constraint firstItem="wJk-at-PTY" firstAttribute="top" secondItem="BLq-6F-zn0" secondAttribute="top" constant="20" id="eqj-3K-F8u"/>
+                            <constraint firstAttribute="width" constant="100" id="xcb-hm-Tpz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EvO-re-pK4" userLabel="City View">
+                        <rect key="frame" x="156" y="147" width="100" height="100"/>
+                        <subviews>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVv-bZ-EXw">
+                                <rect key="frame" x="25" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="4Tl-hd-x6d"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Hhi-vy-Qqq"/>
+                                    <constraint firstAttribute="width" constant="50" id="PY3-8Q-WZQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="W1b-R2-xX0"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="filter_town_inactive">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" image="filter_town_Active"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4Tl-hd-x6d"/>
+                                        <exclude reference="Hhi-vy-Qqq"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onCollegeTypeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OxY-a3-Vgu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Town" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZ5-W0-uUX">
+                                <rect key="frame" x="10" y="78" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="2fC-vQ-qwq"/>
+                                    <constraint firstAttribute="height" constant="21" id="6X3-FA-mhI"/>
+                                    <constraint firstAttribute="width" constant="80" id="jB6-by-vZv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="jvx-eu-Dhc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2fC-vQ-qwq"/>
+                                        <exclude reference="jvx-eu-Dhc"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="7iM-lu-8mm"/>
+                            <constraint firstItem="QZ5-W0-uUX" firstAttribute="top" secondItem="PVv-bZ-EXw" secondAttribute="bottom" constant="8" id="8Ux-Ie-iWt"/>
+                            <constraint firstAttribute="height" constant="100" id="XFs-NK-9sT"/>
+                            <constraint firstItem="PVv-bZ-EXw" firstAttribute="top" secondItem="EvO-re-pK4" secondAttribute="top" constant="20" id="iN7-bM-Umg"/>
+                            <constraint firstItem="PVv-bZ-EXw" firstAttribute="leading" secondItem="EvO-re-pK4" secondAttribute="leading" constant="25" id="imy-g3-nrP"/>
+                            <constraint firstItem="QZ5-W0-uUX" firstAttribute="leading" secondItem="EvO-re-pK4" secondAttribute="leading" constant="10" id="qHs-70-uNI"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZn-Hk-uk7" userLabel="Town View">
+                        <rect key="frame" x="26" y="147" width="100" height="100"/>
+                        <subviews>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45X-Rz-d8g">
+                                <rect key="frame" x="25" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SJW-rg-sw0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="ceB-ws-Q8Z"/>
+                                    <constraint firstAttribute="width" constant="50" id="gvc-fD-qY2"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="pN1-3b-eJG"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="filter_city_inactive">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" image="filter_city_active"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ceB-ws-Q8Z"/>
+                                        <exclude reference="pN1-3b-eJG"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onCollegeTypeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5JF-ND-pPT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srm-Pv-oHY">
+                                <rect key="frame" x="10" y="78" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="5wp-u0-xud"/>
+                                    <constraint firstAttribute="width" constant="80" id="8Pd-Uh-UTY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="RdZ-IZ-emu"/>
+                                    <constraint firstAttribute="height" constant="21" id="vIX-ro-bBA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5wp-u0-xud"/>
+                                        <exclude reference="RdZ-IZ-emu"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="3N1-cX-sMv"/>
+                            <constraint firstItem="Srm-Pv-oHY" firstAttribute="leading" secondItem="VZn-Hk-uk7" secondAttribute="leading" constant="10" id="Jvq-71-sqG"/>
+                            <constraint firstItem="45X-Rz-d8g" firstAttribute="top" secondItem="VZn-Hk-uk7" secondAttribute="top" constant="20" id="cH7-1M-HRE"/>
+                            <constraint firstItem="45X-Rz-d8g" firstAttribute="leading" secondItem="VZn-Hk-uk7" secondAttribute="leading" constant="25" id="eif-Qq-aEw"/>
+                            <constraint firstAttribute="height" constant="100" id="ruP-cQ-urz"/>
+                            <constraint firstItem="Srm-Pv-oHY" firstAttribute="top" secondItem="45X-Rz-d8g" secondAttribute="bottom" constant="8" id="t97-xM-MmM"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGB-wb-uc4" userLabel="Rural View">
+                        <rect key="frame" x="286" y="147" width="100" height="100"/>
+                        <subviews>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxe-YF-whG">
+                                <rect key="frame" x="25" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="FE3-9r-kXy"/>
+                                    <constraint firstAttribute="width" constant="50" id="J2m-FR-Don"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="JWT-SW-XRJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="u6z-f8-JWA"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="filter_rural_inactive">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" image="filter_rural_active"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FE3-9r-kXy"/>
+                                        <exclude reference="JWT-SW-XRJ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onCollegeTypeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HxW-uM-6Pr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rural" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOY-Lm-K8X">
+                                <rect key="frame" x="10" y="78" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="8kZ-hZ-YJn"/>
+                                    <constraint firstAttribute="height" constant="21" id="9LT-ep-kzf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="RNY-hg-FTP"/>
+                                    <constraint firstAttribute="width" constant="80" id="czf-FJ-WaV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8kZ-hZ-YJn"/>
+                                        <exclude reference="RNY-hg-FTP"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="34z-gt-ecC"/>
+                            <constraint firstItem="JOY-Lm-K8X" firstAttribute="top" secondItem="Pxe-YF-whG" secondAttribute="bottom" constant="8" id="DGw-LA-QPV"/>
+                            <constraint firstItem="JOY-Lm-K8X" firstAttribute="leading" secondItem="eGB-wb-uc4" secondAttribute="leading" constant="10" id="Fqz-x2-m4S"/>
+                            <constraint firstItem="Pxe-YF-whG" firstAttribute="leading" secondItem="eGB-wb-uc4" secondAttribute="leading" constant="25" id="XXg-KF-L2Q"/>
+                            <constraint firstItem="Pxe-YF-whG" firstAttribute="top" secondItem="eGB-wb-uc4" secondAttribute="top" constant="20" id="ZGP-D0-9s8"/>
+                            <constraint firstAttribute="width" constant="100" id="e5r-tb-4f1"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tck-tI-nlT" userLabel="Private View">
+                        <rect key="frame" x="90" y="257" width="100" height="100"/>
+                        <subviews>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ed-zm-AKh">
+                                <rect key="frame" x="25" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Bdy-HA-Oxv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="UGS-IS-RW4"/>
+                                    <constraint firstAttribute="height" constant="50" id="YQw-AE-98S"/>
+                                    <constraint firstAttribute="width" constant="50" id="sIH-yy-nzU"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="filter_pri_inactive">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" image="filter_pri_active"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Bdy-HA-Oxv"/>
+                                        <exclude reference="UGS-IS-RW4"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onCollegeTypeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cWJ-cQ-QLj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljZ-11-3xd">
+                                <rect key="frame" x="10" y="78" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="3mc-Ba-7je"/>
+                                    <constraint firstAttribute="height" constant="21" id="gPc-9T-wdd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="qTe-v8-Ygb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="t2q-hy-TFi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qTe-v8-Ygb"/>
+                                        <exclude reference="t2q-hy-TFi"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="4JK-1U-ztY"/>
+                            <constraint firstItem="6ed-zm-AKh" firstAttribute="top" secondItem="tck-tI-nlT" secondAttribute="top" constant="20" id="4eA-OW-8Ot"/>
+                            <constraint firstAttribute="height" constant="100" id="Ad6-hm-1Jw"/>
+                            <constraint firstItem="ljZ-11-3xd" firstAttribute="top" secondItem="6ed-zm-AKh" secondAttribute="bottom" constant="8" id="DQC-NN-tqb"/>
+                            <constraint firstItem="ljZ-11-3xd" firstAttribute="leading" secondItem="tck-tI-nlT" secondAttribute="leading" constant="10" id="Fex-h5-HFf"/>
+                            <constraint firstItem="6ed-zm-AKh" firstAttribute="leading" secondItem="tck-tI-nlT" secondAttribute="leading" constant="25" id="ZtK-zH-Ni6"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFJ-mw-a4Z" userLabel="Public View">
+                        <rect key="frame" x="222" y="257" width="100" height="100"/>
+                        <subviews>
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDj-Ij-RfL">
+                                <rect key="frame" x="25" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="GFW-qz-tss"/>
+                                    <constraint firstAttribute="width" constant="50" id="M0l-Yz-Wf7"/>
+                                    <constraint firstAttribute="height" constant="50" id="Vgi-bd-9YK"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="beA-DX-2CK"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="filter_pub_inactive">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" image="filter_pub_active"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GFW-qz-tss"/>
+                                        <exclude reference="beA-DX-2CK"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onCollegeTypeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xGH-lY-85l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tey-vD-cRY">
+                                <rect key="frame" x="10" y="78" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KWF-BD-stI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="a7p-4E-KXD"/>
+                                    <constraint firstAttribute="width" constant="80" id="f89-Hn-1ds"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="hMs-ma-79h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="a7p-4E-KXD"/>
+                                        <exclude reference="hMs-ma-79h"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tey-vD-cRY" firstAttribute="top" secondItem="oDj-Ij-RfL" secondAttribute="bottom" constant="8" id="4IR-r1-IlW"/>
+                            <constraint firstItem="oDj-Ij-RfL" firstAttribute="top" secondItem="BFJ-mw-a4Z" secondAttribute="top" constant="20" id="6Og-gE-9UL"/>
+                            <constraint firstItem="oDj-Ij-RfL" firstAttribute="leading" secondItem="BFJ-mw-a4Z" secondAttribute="leading" constant="25" id="FD9-0B-BzR"/>
+                            <constraint firstItem="Tey-vD-cRY" firstAttribute="leading" secondItem="BFJ-mw-a4Z" secondAttribute="leading" constant="10" id="USL-pF-7SM"/>
+                            <constraint firstAttribute="height" constant="100" id="l6N-2O-mtd"/>
+                            <constraint firstAttribute="width" constant="100" id="tm5-U2-KWp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eGB-wb-uc4" firstAttribute="leading" secondItem="VZn-Hk-uk7" secondAttribute="trailing" constant="40" id="0FS-bs-8WK"/>
+                    <constraint firstItem="eGB-wb-uc4" firstAttribute="leading" secondItem="VZn-Hk-uk7" secondAttribute="trailing" constant="40" id="1C4-BR-RPQ"/>
+                    <constraint firstItem="EvO-re-pK4" firstAttribute="top" secondItem="Gr9-S8-1MP" secondAttribute="bottom" constant="10" id="3cq-R2-P1E"/>
+                    <constraint firstItem="VZn-Hk-uk7" firstAttribute="leading" secondItem="EvO-re-pK4" secondAttribute="trailing" constant="45" id="4RL-2d-eAk"/>
+                    <constraint firstAttribute="trailing" secondItem="BFJ-mw-a4Z" secondAttribute="trailing" constant="85" id="6Rs-ow-7dw"/>
+                    <constraint firstItem="Gr9-S8-1MP" firstAttribute="top" secondItem="91E-2z-OrD" secondAttribute="bottom" constant="8" id="86X-ZB-8mN"/>
+                    <constraint firstItem="VZn-Hk-uk7" firstAttribute="top" secondItem="Gr9-S8-1MP" secondAttribute="bottom" constant="10" id="9hA-v5-G4X"/>
+                    <constraint firstItem="EvO-re-pK4" firstAttribute="leading" secondItem="tck-tI-nlT" secondAttribute="trailing" constant="-34" id="A80-mc-8lc"/>
+                    <constraint firstItem="91E-2z-OrD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Ahg-1w-22F"/>
+                    <constraint firstItem="Gr9-S8-1MP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="85" id="BJ2-pg-8av"/>
+                    <constraint firstItem="tck-tI-nlT" firstAttribute="top" secondItem="EvO-re-pK4" secondAttribute="bottom" constant="10" id="Bai-E2-Zhl"/>
+                    <constraint firstItem="BLq-6F-zn0" firstAttribute="top" secondItem="91E-2z-OrD" secondAttribute="bottom" constant="8" id="E98-VQ-zbW"/>
+                    <constraint firstItem="eGB-wb-uc4" firstAttribute="leading" secondItem="EvO-re-pK4" secondAttribute="trailing" constant="30" id="HMl-Tx-uZf"/>
+                    <constraint firstAttribute="trailing" secondItem="BLq-6F-zn0" secondAttribute="trailing" constant="85" id="MTy-LN-Ao1"/>
+                    <constraint firstItem="91E-2z-OrD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="N2u-1H-ofu"/>
+                    <constraint firstItem="VZn-Hk-uk7" firstAttribute="width" secondItem="eGB-wb-uc4" secondAttribute="width" id="Nad-P3-7Yb"/>
+                    <constraint firstItem="EvO-re-pK4" firstAttribute="leading" secondItem="Gr9-S8-1MP" secondAttribute="trailing" constant="-34" id="O0v-La-9xB"/>
+                    <constraint firstItem="VZn-Hk-uk7" firstAttribute="width" secondItem="EvO-re-pK4" secondAttribute="width" id="PPI-Le-fyR"/>
+                    <constraint firstItem="VZn-Hk-uk7" firstAttribute="width" secondItem="eGB-wb-uc4" secondAttribute="width" id="VHH-Wl-Kc5"/>
+                    <constraint firstItem="EvO-re-pK4" firstAttribute="leading" secondItem="VZn-Hk-uk7" secondAttribute="trailing" constant="40" id="W3y-LA-8S0"/>
+                    <constraint firstItem="EvO-re-pK4" firstAttribute="width" secondItem="eGB-wb-uc4" secondAttribute="width" id="Xgb-pS-YeH"/>
+                    <constraint firstItem="eGB-wb-uc4" firstAttribute="top" secondItem="BLq-6F-zn0" secondAttribute="bottom" constant="10" id="YeU-Ls-beK"/>
+                    <constraint firstItem="EvO-re-pK4" firstAttribute="width" secondItem="VZn-Hk-uk7" secondAttribute="width" id="abq-il-Cyw"/>
+                    <constraint firstItem="BLq-6F-zn0" firstAttribute="leading" secondItem="EvO-re-pK4" secondAttribute="trailing" constant="-34" id="buI-Ok-AX8"/>
+                    <constraint firstItem="VZn-Hk-uk7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dcB-Ez-pQG"/>
+                    <constraint firstItem="Gr9-S8-1MP" firstAttribute="width" secondItem="BLq-6F-zn0" secondAttribute="width" id="diC-7E-7Go"/>
+                    <constraint firstItem="eGB-wb-uc4" firstAttribute="leading" secondItem="VZn-Hk-uk7" secondAttribute="trailing" constant="45" id="e7T-iw-Rfc"/>
+                    <constraint firstItem="BFJ-mw-a4Z" firstAttribute="top" secondItem="eGB-wb-uc4" secondAttribute="bottom" constant="10" id="frR-3J-tQP"/>
+                    <constraint firstAttribute="centerX" secondItem="EvO-re-pK4" secondAttribute="centerX" id="jlK-1k-pBA"/>
+                    <constraint firstAttribute="trailing" secondItem="eGB-wb-uc4" secondAttribute="trailing" constant="20" id="kFi-Jm-bZ3"/>
+                    <constraint firstItem="tck-tI-nlT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="90" id="n0x-ws-rEQ"/>
+                    <constraint firstItem="tck-tI-nlT" firstAttribute="width" secondItem="BFJ-mw-a4Z" secondAttribute="width" id="n8l-pv-JZT"/>
+                    <constraint firstItem="VZn-Hk-uk7" firstAttribute="leading" secondItem="EvO-re-pK4" secondAttribute="trailing" constant="40" id="sDO-P1-d94"/>
+                    <constraint firstItem="BFJ-mw-a4Z" firstAttribute="leading" secondItem="EvO-re-pK4" secondAttribute="trailing" constant="-34" id="vNI-t9-2lh"/>
+                    <constraint firstItem="EvO-re-pK4" firstAttribute="width" secondItem="VZn-Hk-uk7" secondAttribute="width" id="x6x-h7-ENX"/>
+                    <constraint firstItem="Gr9-S8-1MP" firstAttribute="width" secondItem="BLq-6F-zn0" secondAttribute="width" id="xrA-9m-LTS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="91E-2z-OrD" secondAttribute="trailing" constant="15" id="xsb-JY-3gU"/>
+                    <constraint firstItem="EvO-re-pK4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yeE-ve-R1c"/>
+                    <constraint firstItem="EvO-re-pK4" firstAttribute="leading" secondItem="VZn-Hk-uk7" secondAttribute="trailing" constant="30" id="ztg-eS-3tw"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="BJ2-pg-8av"/>
+                        <exclude reference="4RL-2d-eAk"/>
+                        <exclude reference="Nad-P3-7Yb"/>
+                        <exclude reference="VHH-Wl-Kc5"/>
+                        <exclude reference="dcB-Ez-pQG"/>
+                        <exclude reference="sDO-P1-d94"/>
+                        <exclude reference="W3y-LA-8S0"/>
+                        <exclude reference="abq-il-Cyw"/>
+                        <exclude reference="x6x-h7-ENX"/>
+                        <exclude reference="yeE-ve-R1c"/>
+                        <exclude reference="MTy-LN-Ao1"/>
+                        <exclude reference="n0x-ws-rEQ"/>
+                        <exclude reference="0FS-bs-8WK"/>
+                        <exclude reference="1C4-BR-RPQ"/>
+                        <exclude reference="e7T-iw-Rfc"/>
+                        <exclude reference="kFi-Jm-bZ3"/>
+                        <exclude reference="6Rs-ow-7dw"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="91E-2z-OrD" id="IOQ-Mc-OlL"/>
+            </connections>
+            <point key="canvasLocation" x="441.5" y="268"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="filter_city_active" width="60" height="60"/>
+        <image name="filter_city_inactive" width="60" height="60"/>
+        <image name="filter_college_active" width="60" height="60"/>
+        <image name="filter_college_inactive" width="60" height="60"/>
+        <image name="filter_pri_active" width="60" height="60"/>
+        <image name="filter_pri_inactive" width="60" height="60"/>
+        <image name="filter_pub_active" width="60" height="60"/>
+        <image name="filter_pub_inactive" width="60" height="60"/>
+        <image name="filter_rural_active" width="60" height="60"/>
+        <image name="filter_rural_inactive" width="60" height="60"/>
+        <image name="filter_town_Active" width="60" height="60"/>
+        <image name="filter_town_inactive" width="60" height="60"/>
+        <image name="filter_uni_active" width="60" height="60"/>
+        <image name="filter_uni_inactive" width="60" height="60"/>
+    </resources>
+</document>

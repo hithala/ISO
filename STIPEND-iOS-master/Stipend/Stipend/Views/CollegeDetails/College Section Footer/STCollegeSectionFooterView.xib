@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STCollegeSectionFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pV-ja-tmx" userLabel="BottomSaperatorView">
+                    <rect key="frame" x="0.0" y="43" width="438" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="RzS-Bf-WE3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRk-of-E2e" userLabel="TopSaperatorView">
+                    <rect key="frame" x="0.0" y="0.0" width="438" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="bya-1X-D1T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6pV-ja-tmx" secondAttribute="bottom" id="CPc-Qk-LcV"/>
+                <constraint firstAttribute="trailing" secondItem="6pV-ja-tmx" secondAttribute="trailing" id="Co9-Bo-bBQ"/>
+                <constraint firstAttribute="trailing" secondItem="HRk-of-E2e" secondAttribute="trailing" id="Ibn-89-zhd"/>
+                <constraint firstItem="HRk-of-E2e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KNV-En-z1x"/>
+                <constraint firstItem="HRk-of-E2e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dLx-CW-W9m"/>
+                <constraint firstItem="6pV-ja-tmx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wNO-Wi-Qwg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomViewSeparator" destination="6pV-ja-tmx" id="5pH-8f-QUU"/>
+                <outlet property="bottomViewSeparatorHeightConstraint" destination="RzS-Bf-WE3" id="Odf-ec-164"/>
+                <outlet property="topViewSeparator" destination="HRk-of-E2e" id="QeY-dr-6JR"/>
+                <outlet property="topViewSeparatorHeightConstraint" destination="bya-1X-D1T" id="1jt-oA-E3V"/>
+            </connections>
+            <point key="canvasLocation" x="339" y="-259"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STSignInFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="557" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZy-Kl-Hyz">
+                    <rect key="frame" x="30" y="40" width="497" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Jxh-Oo-fD0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                    <state key="normal" title="Sign In" backgroundImage="button_active"/>
+                    <state key="disabled" title="Sign In" backgroundImage="button_inactive">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onSignInButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="kgJ-u1-w7K"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpV-6G-xfE">
+                    <rect key="frame" x="226" y="5" width="105" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="105" id="H24-I1-cU0"/>
+                        <constraint firstAttribute="height" constant="30" id="JQp-zs-6q4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                    <state key="normal" title="Forgot Password?">
+                        <color key="titleColor" red="0.30196078431372547" green="0.81568627450980391" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onForgotPasswordAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="vqL-sq-kUG"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Kp-DM-6SI" userLabel="UnderlineView">
+                    <rect key="frame" x="226" y="27" width="105" height="1"/>
+                    <color key="backgroundColor" red="0.30196078430000001" green="0.81568627449999997" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="9l9-x9-lbI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0Kp-DM-6SI" firstAttribute="width" secondItem="JpV-6G-xfE" secondAttribute="width" id="9oh-04-H0Q"/>
+                <constraint firstAttribute="bottom" secondItem="rZy-Kl-Hyz" secondAttribute="bottom" constant="20" id="Gr1-Hw-6VF"/>
+                <constraint firstAttribute="trailing" secondItem="rZy-Kl-Hyz" secondAttribute="trailing" constant="30" id="HO2-yC-4z3"/>
+                <constraint firstAttribute="centerX" secondItem="JpV-6G-xfE" secondAttribute="centerX" id="Owf-Pf-FNb"/>
+                <constraint firstAttribute="centerX" secondItem="0Kp-DM-6SI" secondAttribute="centerX" id="SZD-VJ-pwo"/>
+                <constraint firstItem="JpV-6G-xfE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="bMf-Wq-cM6"/>
+                <constraint firstItem="0Kp-DM-6SI" firstAttribute="top" secondItem="JpV-6G-xfE" secondAttribute="bottom" constant="-8" id="daG-Wj-8u4"/>
+                <constraint firstItem="rZy-Kl-Hyz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="p7V-3Y-tYJ"/>
+                <constraint firstItem="rZy-Kl-Hyz" firstAttribute="top" secondItem="JpV-6G-xfE" secondAttribute="bottom" constant="5" id="z7u-qw-mfR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Gr1-Hw-6VF"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="forgotPasswordButton" destination="JpV-6G-xfE" id="EfL-hI-iFc"/>
+                <outlet property="signInButton" destination="rZy-Kl-Hyz" id="otj-Kx-sRZ"/>
+            </connections>
+            <point key="canvasLocation" x="506.5" y="118"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_active" width="288" height="53"/>
+        <image name="button_inactive" width="288" height="53"/>
+    </resources>
+</document>

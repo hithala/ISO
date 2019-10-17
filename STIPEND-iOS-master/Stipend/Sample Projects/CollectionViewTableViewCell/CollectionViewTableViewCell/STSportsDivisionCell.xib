@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SportsDivisionCellIdentifier" rowHeight="44" id="KGk-i7-Jjw" customClass="STSportsDivisionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NCAA DIVISION I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHm-oZ-xhw">
+                        <rect key="frame" x="18" y="10" width="134" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyt-pk-1cW" userLabel="SeparatorLine">
+                        <rect key="frame" x="0.0" y="58" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="yTd-Au-D38"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fyt-pk-1cW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Azr-QP-81t"/>
+                    <constraint firstAttribute="trailing" secondItem="Fyt-pk-1cW" secondAttribute="trailing" id="Cgb-K2-Pr6"/>
+                    <constraint firstItem="WHm-oZ-xhw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="JCR-Lg-fqY"/>
+                    <constraint firstAttribute="centerY" secondItem="WHm-oZ-xhw" secondAttribute="centerY" id="PyK-kg-PWu"/>
+                    <constraint firstItem="WHm-oZ-xhw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="jyb-ue-fKw"/>
+                    <constraint firstAttribute="bottom" secondItem="Fyt-pk-1cW" secondAttribute="bottom" id="rz1-xW-hcJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ibLabelField" destination="WHm-oZ-xhw" id="Jal-ia-Wan"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="STSeeMoreCell" id="KGk-i7-Jjw" customClass="STSeeMoreCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BuE-VR-pgj" userLabel="Top Seperator View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="tSK-mR-GYp"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjR-Zv-Rog">
+                        <rect key="frame" x="0.0" y="1" width="320" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="gh7-PE-8Yn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                        <state key="normal" title="See More...">
+                            <color key="titleColor" red="0.22311833500862122" green="0.73674291372299194" blue="0.82011395692825317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QsM-bB-q3h"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLI-oW-6ht" userLabel="Bottom Seperator View">
+                        <rect key="frame" x="0.0" y="48.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ONX-bc-OFq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="YLI-oW-6ht" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2sg-wp-WRW"/>
+                    <constraint firstItem="BuE-VR-pgj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6F6-iA-Luq"/>
+                    <constraint firstItem="OjR-Zv-Rog" firstAttribute="top" secondItem="BuE-VR-pgj" secondAttribute="bottom" id="Cat-5m-0en"/>
+                    <constraint firstAttribute="bottom" secondItem="OjR-Zv-Rog" secondAttribute="bottom" id="FHS-Ed-h0Q"/>
+                    <constraint firstItem="BuE-VR-pgj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HDU-ck-GnN"/>
+                    <constraint firstAttribute="trailing" secondItem="YLI-oW-6ht" secondAttribute="trailing" id="S9M-55-3ZZ"/>
+                    <constraint firstItem="OjR-Zv-Rog" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XOt-KB-eQi"/>
+                    <constraint firstAttribute="bottom" secondItem="YLI-oW-6ht" secondAttribute="bottom" id="ftJ-We-hLI"/>
+                    <constraint firstAttribute="trailing" secondItem="OjR-Zv-Rog" secondAttribute="trailing" id="vpj-Wg-Ax0"/>
+                    <constraint firstAttribute="trailing" secondItem="BuE-VR-pgj" secondAttribute="trailing" id="wUz-gF-boO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomCellSeparatorHeightConstraint" destination="ONX-bc-OFq" id="P6s-kx-yxH"/>
+                <outlet property="cellSeparatorLeadingSpaceConstraint" destination="2sg-wp-WRW" id="2ZZ-yZ-kEU"/>
+                <outlet property="ibTapButton" destination="OjR-Zv-Rog" id="Obl-Qv-UeQ"/>
+                <outlet property="topCellSeparatorHeightConstraint" destination="tSK-mR-GYp" id="9E0-kJ-eYg"/>
+                <outlet property="topCellSeparatorView" destination="BuE-VR-pgj" id="cdg-iK-Z57"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

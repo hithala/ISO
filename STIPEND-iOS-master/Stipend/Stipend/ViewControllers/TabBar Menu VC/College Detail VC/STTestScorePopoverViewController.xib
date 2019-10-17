@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STTestScorePopoverViewController">
+            <connections>
+                <outlet property="currentSATScoreIdentifier" destination="Cvm-kV-bIB" id="oWy-C4-Lly"/>
+                <outlet property="currentSATScoreLabel" destination="YNg-l1-cZx" id="o6f-Wr-00x"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wLX-wL-wHV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="New SAT Equiv:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvm-kV-bIB">
+                    <rect key="frame" x="12" y="13" width="123.5" height="23.5"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1750 / 1800" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNg-l1-cZx">
+                    <rect key="frame" x="140.5" y="13" width="96" height="23.5"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Cvm-kV-bIB" secondAttribute="bottom" constant="11.5" id="5NM-Kc-X1c"/>
+                <constraint firstAttribute="bottom" secondItem="YNg-l1-cZx" secondAttribute="bottom" constant="11.5" id="Ktf-mW-1sH"/>
+                <constraint firstItem="YNg-l1-cZx" firstAttribute="leading" secondItem="Cvm-kV-bIB" secondAttribute="trailing" constant="5" id="ZFi-hY-aC8"/>
+                <constraint firstItem="Cvm-kV-bIB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="hAA-sc-xz6"/>
+                <constraint firstItem="Cvm-kV-bIB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="vhx-52-pxF"/>
+                <constraint firstItem="YNg-l1-cZx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="yXn-tN-Jsf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-93.5" y="-267"/>
+        </view>
+    </objects>
+</document>

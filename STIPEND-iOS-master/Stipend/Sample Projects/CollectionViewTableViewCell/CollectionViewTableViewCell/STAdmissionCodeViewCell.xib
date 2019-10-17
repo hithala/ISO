@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AdmissionCodeCellIdentifier" rowHeight="76" id="KGk-i7-Jjw" customClass="STAdmissionCodeViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYt-N4-aEj" userLabel="ACTView">
+                        <rect key="frame" x="0.0" y="0.0" width="167" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3434" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5D-04-vUV">
+                                <rect key="frame" x="62" y="26" width="44" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAT CODE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcQ-TP-HtX">
+                                <rect key="frame" x="51" y="50" width="65" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="N5D-04-vUV" secondAttribute="centerX" id="TJz-MT-ytg"/>
+                            <constraint firstAttribute="centerX" secondItem="fcQ-TP-HtX" secondAttribute="centerX" id="f2X-Mq-ArL"/>
+                            <constraint firstItem="fcQ-TP-HtX" firstAttribute="top" secondItem="N5D-04-vUV" secondAttribute="bottom" id="oMG-gX-BDf"/>
+                            <constraint firstAttribute="centerY" secondItem="N5D-04-vUV" secondAttribute="centerY" id="u57-Gg-s9w"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L42-Ka-3Fb" userLabel="ACTView">
+                        <rect key="frame" x="167" y="0.0" width="167" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1895" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAH-oF-6e7">
+                                <rect key="frame" x="62" y="26" width="44" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACT CODE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zND-uR-QF3">
+                                <rect key="frame" x="50" y="48" width="67" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="vAH-oF-6e7" secondAttribute="centerY" id="Iqc-WU-5cz"/>
+                            <constraint firstAttribute="centerX" secondItem="zND-uR-QF3" secondAttribute="centerX" id="OMc-yD-439"/>
+                            <constraint firstAttribute="centerX" secondItem="vAH-oF-6e7" secondAttribute="centerX" id="ZHT-gW-Vni"/>
+                            <constraint firstItem="zND-uR-QF3" firstAttribute="top" secondItem="vAH-oF-6e7" secondAttribute="bottom" constant="-2" id="y0J-xB-4Sd"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFr-cd-qYA" userLabel="Spacier View">
+                        <rect key="frame" x="167" y="0.0" width="0.0" height="75"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="Tlj-Eo-XFf"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8F5-Fg-19w" userLabel="SeparatorView">
+                        <rect key="frame" x="0.0" y="73" width="334" height="2"/>
+                        <color key="backgroundColor" red="0.75294117647058822" green="0.75294117647058822" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="nPt-Iq-XH8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="L42-Ka-3Fb" secondAttribute="trailing" id="02V-xj-enG"/>
+                    <constraint firstAttribute="bottom" secondItem="SFr-cd-qYA" secondAttribute="bottom" id="53Z-KB-fwb"/>
+                    <constraint firstItem="sYt-N4-aEj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5yB-qb-RtL"/>
+                    <constraint firstAttribute="centerY" secondItem="SFr-cd-qYA" secondAttribute="centerY" id="7Qw-Uu-Vz8"/>
+                    <constraint firstAttribute="bottom" secondItem="L42-Ka-3Fb" secondAttribute="bottom" id="GlB-hN-x9Q"/>
+                    <constraint firstItem="SFr-cd-qYA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HZY-MX-E0v"/>
+                    <constraint firstItem="8F5-Fg-19w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KM5-9x-kJ1"/>
+                    <constraint firstItem="L42-Ka-3Fb" firstAttribute="leading" secondItem="SFr-cd-qYA" secondAttribute="trailing" id="MS2-RW-56W"/>
+                    <constraint firstItem="SFr-cd-qYA" firstAttribute="leading" secondItem="sYt-N4-aEj" secondAttribute="trailing" id="bGV-r9-4It"/>
+                    <constraint firstAttribute="trailing" secondItem="8F5-Fg-19w" secondAttribute="trailing" id="cwP-Bn-UCL"/>
+                    <constraint firstAttribute="bottom" secondItem="8F5-Fg-19w" secondAttribute="bottom" id="eF9-6u-EFc"/>
+                    <constraint firstAttribute="centerX" secondItem="SFr-cd-qYA" secondAttribute="centerX" id="eGw-LY-bZA"/>
+                    <constraint firstAttribute="bottom" secondItem="sYt-N4-aEj" secondAttribute="bottom" id="vjz-Jy-dNp"/>
+                    <constraint firstItem="sYt-N4-aEj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vwc-Gt-Xpo"/>
+                    <constraint firstItem="L42-Ka-3Fb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zki-kl-Ii0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="131" y="211"/>
+        </tableViewCell>
+    </objects>
+</document>

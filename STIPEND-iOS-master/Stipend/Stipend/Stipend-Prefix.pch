@@ -1,0 +1,50 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #import "STConstants.h"
+    #import "UIButton+Additions.h"
+    #import "UIColor+Additions.h"
+    #import "NSString+Additions.h"
+    #import "UIImageView+Additions.h"
+    #import "UIFont+Additions.h"
+    #import <MagicalRecord/MagicalRecord.h>
+    #import <FBSDKCoreKit/FBSDKCoreKit.h>
+    #import <FBSDKShareKit/FBSDKShareKit.h>
+    #import <FBSDKLoginKit/FBSDKLoginKit.h>
+    #import "STNetworkAPIManager.h"
+    #import "STNetworkAPIManager+CollegeListAPI.h"
+    #import "STNetworkAPIManager+CollegeDetailsAPI.h"
+    #import "STNetworkAPIManager+ProfileAPI.h"
+    #import "STNetworkAPIManager+LoginAPI.h"
+    #import "STNetworkAPIManager+WeatherAPI.h"
+    #import "STNetworkAPIManager+FavoritesAPI.h"
+    #import "STNetworkAPIManager+ClippingsAPI.h"
+    #import "STNetworkAPIManager+CompareAPI.h"
+    #import "STNetworkAPIManager+PrivacyMessageAPI.h"
+    #import "STNetworkAPIManager+FilterAPI.h"
+    #import "UIViewController+Rotation.h"
+    #import "STAppDelegate.h"
+    #import "STUtilities.h"
+
+    #import "STUserManager.h"
+    #import "STProgressHUD.h"
+    #import "STLocationManager.h"
+    #import "STInAppPurchaseManager.h"
+
+
+    #define MR_SHORTHAND
+
+#ifdef DEBUG
+#define NSLog(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define NSLog(format, ...)
+#endif
+
+#endif

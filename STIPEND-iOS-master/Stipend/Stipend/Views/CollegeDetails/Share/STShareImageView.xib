@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STShareImageView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wm-TV-B1K" userLabel="TopNavigationView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harvard University" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="gNk-ag-nUp">
+                            <rect key="frame" x="10" y="10" width="322" height="29"/>
+                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="427-99-9l4" userLabel="SpacierView">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="91c-Sv-dXV"/>
+                                <constraint firstAttribute="width" constant="100" id="Bal-kW-pWe"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cambridge, MA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ayX-6C-DDv">
+                            <rect key="frame" x="10" y="39" width="322" height="18"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="4fG-GJ-rWO">
+                            <rect key="frame" x="342" y="20" width="23" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="5fm-7h-pAY"/>
+                                <constraint firstAttribute="width" constant="23" id="kCH-k6-9vf"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25882352941176467" green="0.7803921568627451" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="4fG-GJ-rWO" secondAttribute="trailing" constant="10" id="2vy-Am-nAZ"/>
+                        <constraint firstItem="ayX-6C-DDv" firstAttribute="leading" secondItem="4wm-TV-B1K" secondAttribute="leading" constant="10" id="BIV-kK-q5A"/>
+                        <constraint firstItem="4fG-GJ-rWO" firstAttribute="leading" secondItem="gNk-ag-nUp" secondAttribute="trailing" constant="10" id="BO5-9y-SYw"/>
+                        <constraint firstAttribute="centerY" secondItem="4fG-GJ-rWO" secondAttribute="centerY" id="Ish-EJ-wnx"/>
+                        <constraint firstItem="427-99-9l4" firstAttribute="top" secondItem="gNk-ag-nUp" secondAttribute="bottom" constant="-4" id="OIz-xZ-zGi"/>
+                        <constraint firstItem="gNk-ag-nUp" firstAttribute="top" secondItem="4wm-TV-B1K" secondAttribute="top" constant="10" id="U9N-K0-LyE"/>
+                        <constraint firstItem="ayX-6C-DDv" firstAttribute="top" secondItem="427-99-9l4" secondAttribute="bottom" constant="4" id="f6O-m6-aVc"/>
+                        <constraint firstItem="gNk-ag-nUp" firstAttribute="trailing" secondItem="ayX-6C-DDv" secondAttribute="trailing" id="hpY-iH-YoV"/>
+                        <constraint firstItem="427-99-9l4" firstAttribute="leading" secondItem="4wm-TV-B1K" secondAttribute="leading" constant="10" id="oue-HW-Z9Z"/>
+                        <constraint firstAttribute="height" constant="70" id="qyH-fC-cHA"/>
+                        <constraint firstItem="gNk-ag-nUp" firstAttribute="leading" secondItem="4wm-TV-B1K" secondAttribute="leading" constant="10" id="rF9-Ha-WDI"/>
+                        <constraint firstAttribute="centerY" secondItem="427-99-9l4" secondAttribute="centerY" id="vOw-HU-cek"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c8m-c4-Cpx" userLabel="SnapShotImageView">
+                    <rect key="frame" x="0.0" y="70" width="375" height="380"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4wm-TV-B1K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ja2-i2-YLQ"/>
+                <constraint firstAttribute="trailing" secondItem="4wm-TV-B1K" secondAttribute="trailing" id="OVp-P8-VJX"/>
+                <constraint firstItem="4wm-TV-B1K" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="W61-Sd-8KN"/>
+                <constraint firstAttribute="bottom" secondItem="c8m-c4-Cpx" secondAttribute="bottom" id="kQj-sO-HuZ"/>
+                <constraint firstAttribute="trailing" secondItem="c8m-c4-Cpx" secondAttribute="trailing" id="oHc-li-ZBL"/>
+                <constraint firstItem="c8m-c4-Cpx" firstAttribute="top" secondItem="4wm-TV-B1K" secondAttribute="bottom" id="s6F-Y7-pyd"/>
+                <constraint firstItem="c8m-c4-Cpx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ses-TU-hNc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ibDetailLabel" destination="ayX-6C-DDv" id="OXb-7m-wz6"/>
+                <outlet property="ibSnapShotImgView" destination="c8m-c4-Cpx" id="jCx-O4-PdT"/>
+                <outlet property="ibSpacierView" destination="427-99-9l4" id="NVc-T6-Dgr"/>
+                <outlet property="ibTextLabel" destination="gNk-ag-nUp" id="In0-dk-B9s"/>
+                <outlet property="ibTopNavigationView" destination="4wm-TV-B1K" id="mz3-G0-iJI"/>
+            </connections>
+            <point key="canvasLocation" x="215.5" y="205"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="share_logo.png" width="46" height="60"/>
+    </resources>
+</document>

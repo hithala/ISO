@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fEg-Yk-pXC">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Harward University-->
+        <scene sceneID="uRr-pz-RcY">
+            <objects>
+                <viewController id="pN5-ki-aN3" customClass="CollegePageBaseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vic-fg-fjl"/>
+                        <viewControllerLayoutGuide type="bottom" id="i6h-0R-1GT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fyD-Ml-BB1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="collegeImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ubu-bW-hj5">
+                                <rect key="frame" x="0.0" y="64" width="600" height="300"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="2MQ-7e-TW7">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pN5-ki-aN3" id="90L-3Q-bY8"/>
+                                    <outlet property="delegate" destination="pN5-ki-aN3" id="4W2-SD-bKU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ubu-bW-hj5" firstAttribute="top" secondItem="vic-fg-fjl" secondAttribute="bottom" id="1r4-IJ-gSG"/>
+                            <constraint firstItem="Ubu-bW-hj5" firstAttribute="leading" secondItem="fyD-Ml-BB1" secondAttribute="leading" id="9Ay-fd-kkh"/>
+                            <constraint firstItem="2MQ-7e-TW7" firstAttribute="leading" secondItem="fyD-Ml-BB1" secondAttribute="leading" id="9Oh-06-bqy"/>
+                            <constraint firstAttribute="trailing" secondItem="2MQ-7e-TW7" secondAttribute="trailing" id="Fqb-n7-mco"/>
+                            <constraint firstItem="i6h-0R-1GT" firstAttribute="top" secondItem="2MQ-7e-TW7" secondAttribute="bottom" id="Jtt-Sy-A2Y"/>
+                            <constraint firstItem="2MQ-7e-TW7" firstAttribute="top" secondItem="vic-fg-fjl" secondAttribute="bottom" id="OSN-RK-5bF"/>
+                            <constraint firstAttribute="height" secondItem="Ubu-bW-hj5" secondAttribute="height" multiplier="2" id="jRH-5M-O4J"/>
+                            <constraint firstAttribute="trailing" secondItem="Ubu-bW-hj5" secondAttribute="trailing" id="pzN-ku-4Tg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Harward University" id="KWm-q0-rIA"/>
+                    <connections>
+                        <outlet property="tableView" destination="2MQ-7e-TW7" id="tbL-Vk-nHV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZK-Tg-onE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2569" y="2594"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f2E-SX-3bF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fEg-Yk-pXC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eu2-5Q-KaP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pN5-ki-aN3" kind="relationship" relationship="rootViewController" id="mn6-B0-naz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2GB-dl-Jqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757" y="2594"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="fb3-be-6Lg">
+            <objects>
+                <viewController storyboardIdentifier="LocationViewController" id="RaL-zM-zF8" customClass="STLocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vyf-1v-Fzt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fvp-gT-eH2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qYr-5n-5rP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="z9b-DP-yXs">
+                                <rect key="frame" x="20" y="35" width="560" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4vk-eM-qDi"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Points of Interest"/>
+                                    <segment title="Nearby Colleges"/>
+                                </segments>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="changeMapTypeWithSegmentControl:" destination="RaL-zM-zF8" eventType="valueChanged" id="MXI-3N-9LX"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9I-hE-goh" userLabel="Points of interest View">
+                                <rect key="frame" x="0.0" y="80" width="600" height="520"/>
+                                <subviews>
+                                    <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0v-dC-SGE" customClass="MKMapView">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="520"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="RaL-zM-zF8" id="aa2-nx-aKH"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="i0v-dC-SGE" secondAttribute="trailing" id="Jyg-lk-E3U"/>
+                                    <constraint firstItem="i0v-dC-SGE" firstAttribute="top" secondItem="L9I-hE-goh" secondAttribute="top" id="KdV-tg-CKI"/>
+                                    <constraint firstAttribute="bottom" secondItem="i0v-dC-SGE" secondAttribute="bottom" id="OmS-mf-lcD"/>
+                                    <constraint firstItem="i0v-dC-SGE" firstAttribute="leading" secondItem="L9I-hE-goh" secondAttribute="leading" id="ZO7-rZ-Npw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKe-NM-fgn" userLabel="Nearby colleges View">
+                                <rect key="frame" x="0.0" y="80" width="600" height="520"/>
+                                <subviews>
+                                    <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s23-bq-uLU" customClass="MKMapView">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="520"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="RaL-zM-zF8" id="Khr-Ij-DCO"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="s23-bq-uLU" secondAttribute="trailing" id="V8t-Wb-hg3"/>
+                                    <constraint firstItem="s23-bq-uLU" firstAttribute="top" secondItem="SKe-NM-fgn" secondAttribute="top" id="Wpj-mY-Wd6"/>
+                                    <constraint firstItem="s23-bq-uLU" firstAttribute="leading" secondItem="SKe-NM-fgn" secondAttribute="leading" id="b4c-FF-aiq"/>
+                                    <constraint firstAttribute="bottom" secondItem="s23-bq-uLU" secondAttribute="bottom" id="zTj-0k-og1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaJ-mE-rV3">
+                                <rect key="frame" x="40" y="530" width="520" height="40"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ySG-v0-Sdk"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onGetDirectionClick:" destination="RaL-zM-zF8" eventType="touchUpInside" id="dEo-Qv-5tI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fvp-gT-eH2" firstAttribute="top" secondItem="L9I-hE-goh" secondAttribute="bottom" id="CfH-2c-oU3"/>
+                            <constraint firstItem="z9b-DP-yXs" firstAttribute="top" secondItem="Vyf-1v-Fzt" secondAttribute="bottom" constant="15" id="D29-YM-74L"/>
+                            <constraint firstAttribute="trailing" secondItem="gaJ-mE-rV3" secondAttribute="trailing" constant="40" id="IU9-cJ-raW"/>
+                            <constraint firstItem="z9b-DP-yXs" firstAttribute="leading" secondItem="qYr-5n-5rP" secondAttribute="leading" constant="20" id="Jfg-EY-g36"/>
+                            <constraint firstAttribute="trailing" secondItem="SKe-NM-fgn" secondAttribute="trailing" id="KDc-aA-0Rc"/>
+                            <constraint firstItem="SKe-NM-fgn" firstAttribute="top" secondItem="z9b-DP-yXs" secondAttribute="bottom" constant="15" id="QFc-Y5-47f"/>
+                            <constraint firstAttribute="trailing" secondItem="z9b-DP-yXs" secondAttribute="trailing" constant="20" id="VSO-6W-FHQ"/>
+                            <constraint firstItem="gaJ-mE-rV3" firstAttribute="leading" secondItem="qYr-5n-5rP" secondAttribute="leading" constant="40" id="XKk-2m-dMG"/>
+                            <constraint firstItem="Fvp-gT-eH2" firstAttribute="top" secondItem="SKe-NM-fgn" secondAttribute="bottom" id="cgd-Yt-Xyi"/>
+                            <constraint firstAttribute="trailing" secondItem="L9I-hE-goh" secondAttribute="trailing" id="fDZ-d1-lBH"/>
+                            <constraint firstItem="SKe-NM-fgn" firstAttribute="leading" secondItem="qYr-5n-5rP" secondAttribute="leading" id="jKs-Hw-d73"/>
+                            <constraint firstItem="L9I-hE-goh" firstAttribute="top" secondItem="z9b-DP-yXs" secondAttribute="bottom" constant="15" id="jxO-wp-cbs"/>
+                            <constraint firstItem="L9I-hE-goh" firstAttribute="leading" secondItem="qYr-5n-5rP" secondAttribute="leading" id="o4u-xe-8kU"/>
+                            <constraint firstItem="Fvp-gT-eH2" firstAttribute="top" secondItem="gaJ-mE-rV3" secondAttribute="bottom" constant="30" id="pEm-k4-HZh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getDirectionButton" destination="gaJ-mE-rV3" id="kUs-Jy-aAV"/>
+                        <outlet property="nearbyCollegesView" destination="SKe-NM-fgn" id="elf-gv-8nC"/>
+                        <outlet property="pointsOfInterestView" destination="L9I-hE-goh" id="nMn-Ai-zd4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wr-Dp-cPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757" y="3269"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="collegeImage.jpg" width="900" height="900"/>
+    </resources>
+</document>

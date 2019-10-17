@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SportsViewCellIdentifier" rowHeight="60" id="KGk-i7-Jjw" customClass="STSportsViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDu-YK-8wH" userLabel="LeftLabel">
+                        <rect key="frame" x="10" y="19" width="140" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="zIN-mJ-Eld"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WOMEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIF-Xj-2UA" userLabel="RightLabel">
+                        <rect key="frame" x="225" y="19" width="140" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="1hp-Jl-fKR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8r-5G-WfN" userLabel="LeftSeparatorLine">
+                        <rect key="frame" x="10" y="44" width="140" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="PX6-Du-zib"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJa-wt-VmA" userLabel="RightSeparatorLine">
+                        <rect key="frame" x="225" y="45" width="140" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mF8-Ll-gkY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KJa-wt-VmA" firstAttribute="trailing" secondItem="KIF-Xj-2UA" secondAttribute="trailing" id="01g-D9-6F6"/>
+                    <constraint firstItem="KJa-wt-VmA" firstAttribute="top" secondItem="KIF-Xj-2UA" secondAttribute="bottom" constant="5" id="7tw-cg-rOD"/>
+                    <constraint firstItem="qDu-YK-8wH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="C6e-1j-59c"/>
+                    <constraint firstItem="qDu-YK-8wH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="DyW-Om-pJB"/>
+                    <constraint firstItem="L8r-5G-WfN" firstAttribute="leading" secondItem="qDu-YK-8wH" secondAttribute="leading" id="FbR-T2-9Xw"/>
+                    <constraint firstAttribute="trailing" secondItem="KIF-Xj-2UA" secondAttribute="trailing" constant="10" id="HKn-zV-QpQ"/>
+                    <constraint firstItem="KJa-wt-VmA" firstAttribute="leading" secondItem="KIF-Xj-2UA" secondAttribute="leading" id="KoC-vy-1ZZ"/>
+                    <constraint firstAttribute="centerY" secondItem="qDu-YK-8wH" secondAttribute="centerY" id="LeJ-64-97n"/>
+                    <constraint firstAttribute="centerY" secondItem="KIF-Xj-2UA" secondAttribute="centerY" id="QEK-Es-axX"/>
+                    <constraint firstItem="L8r-5G-WfN" firstAttribute="trailing" secondItem="qDu-YK-8wH" secondAttribute="trailing" id="ToG-v5-aQf"/>
+                    <constraint firstItem="L8r-5G-WfN" firstAttribute="top" secondItem="qDu-YK-8wH" secondAttribute="bottom" constant="5" id="WU8-YF-4g1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ibLeftLabel" destination="qDu-YK-8wH" id="KSH-tS-LOm"/>
+                <outlet property="ibLeftLabelWidthConstraint" destination="zIN-mJ-Eld" id="LOI-cD-np6"/>
+                <outlet property="ibLeftSeparatorLine" destination="L8r-5G-WfN" id="QQi-vr-siC"/>
+                <outlet property="ibRightLabel" destination="KIF-Xj-2UA" id="U1r-FN-QM6"/>
+                <outlet property="ibRightLabelWidthConstraint" destination="1hp-Jl-fKR" id="vMC-91-hOp"/>
+                <outlet property="ibRightSeparatorLine" destination="KJa-wt-VmA" id="cas-6D-EVO"/>
+            </connections>
+            <point key="canvasLocation" x="133.5" y="268"/>
+        </tableViewCell>
+    </objects>
+</document>

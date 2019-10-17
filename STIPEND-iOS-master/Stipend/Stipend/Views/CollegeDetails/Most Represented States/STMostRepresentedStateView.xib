@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STMostRepresentedStateView">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U4b-xF-uMl">
+                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5bk-mr-azo"/>
+                        <constraint firstAttribute="width" constant="50" id="wBC-pl-jqV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2x-Dw-DLh">
+                    <rect key="frame" x="0.0" y="69" width="70" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="1sA-60-esm"/>
+                        <constraint firstAttribute="height" constant="21" id="zLk-ax-WcO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                    <color key="textColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b2x-Dw-DLh" secondAttribute="trailing" constant="10" id="FQF-LF-ra9"/>
+                <constraint firstItem="b2x-Dw-DLh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Fqc-3R-V6l"/>
+                <constraint firstAttribute="bottom" secondItem="b2x-Dw-DLh" secondAttribute="bottom" constant="10" id="G7Z-Nx-uPS"/>
+                <constraint firstAttribute="centerX" secondItem="b2x-Dw-DLh" secondAttribute="centerX" id="KIy-8v-T5D"/>
+                <constraint firstItem="U4b-xF-uMl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Q2w-F7-2Ev"/>
+                <constraint firstItem="U4b-xF-uMl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="RjU-OM-4Di"/>
+                <constraint firstAttribute="centerX" secondItem="U4b-xF-uMl" secondAttribute="centerX" id="Zm4-3h-bVR"/>
+                <constraint firstAttribute="centerY" secondItem="U4b-xF-uMl" secondAttribute="centerY" id="dDg-i5-Jp6"/>
+                <constraint firstAttribute="trailing" secondItem="U4b-xF-uMl" secondAttribute="trailing" constant="10" id="ejI-NV-j9T"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="RjU-OM-4Di"/>
+                    <exclude reference="dDg-i5-Jp6"/>
+                    <exclude reference="ejI-NV-j9T"/>
+                    <exclude reference="FQF-LF-ra9"/>
+                    <exclude reference="Fqc-3R-V6l"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="nameLabel" destination="b2x-Dw-DLh" id="0kR-da-V05"/>
+                <outlet property="stateImageView" destination="U4b-xF-uMl" id="0Vi-lz-TJ9"/>
+            </connections>
+            <point key="canvasLocation" x="137" y="-115"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollegePageCollectionViewCell" id="gTV-IL-0wX" customClass="STCollegePageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="l85-py-fYa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="gTV-IL-0wX" id="DGu-Fr-3iR"/>
+                            <outlet property="delegate" destination="gTV-IL-0wX" id="DbJ-Hv-GO3"/>
+                        </connections>
+                    </tableView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="l85-py-fYa" secondAttribute="trailing" id="3w1-2d-p69"/>
+                <constraint firstItem="l85-py-fYa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LIB-0V-wIv"/>
+                <constraint firstAttribute="bottom" secondItem="l85-py-fYa" secondAttribute="bottom" id="NtF-AV-Nzu"/>
+                <constraint firstItem="l85-py-fYa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="flc-s6-d0l"/>
+            </constraints>
+            <size key="customSize" width="331" height="61"/>
+            <connections>
+                <outlet property="ibTableView" destination="l85-py-fYa" id="udj-SG-gjD"/>
+            </connections>
+            <point key="canvasLocation" x="431.5" y="427.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

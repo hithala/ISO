@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="STIntendedStudyPieChartCell" rowHeight="92" id="KGk-i7-Jjw" customClass="STIntendedStudyPieChartCell">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9q-af-xz0" userLabel="PieChart View" customClass="STPieChartView">
+                        <rect key="frame" x="0.0" y="0.0" width="347" height="91"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CcC-7e-H9r" userLabel="Seperator View">
+                        <rect key="frame" x="0.0" y="89" width="347" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Q5g-To-4LK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="CcC-7e-H9r" secondAttribute="trailing" id="11I-fX-xEE"/>
+                    <constraint firstAttribute="bottom" secondItem="X9q-af-xz0" secondAttribute="bottom" id="6pV-vj-gxs"/>
+                    <constraint firstItem="CcC-7e-H9r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8rO-QB-pbA"/>
+                    <constraint firstItem="X9q-af-xz0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AWy-9j-FQc"/>
+                    <constraint firstAttribute="bottom" secondItem="CcC-7e-H9r" secondAttribute="bottom" constant="1" id="EMN-T4-RAb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="CcC-7e-H9r" secondAttribute="bottom" constant="1" id="QHX-Za-3Cy"/>
+                    <constraint firstItem="X9q-af-xz0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="e2l-cb-ECG"/>
+                    <constraint firstAttribute="trailing" secondItem="X9q-af-xz0" secondAttribute="trailing" id="h3a-gC-qOC"/>
+                    <constraint firstAttribute="trailing" secondItem="CcC-7e-H9r" secondAttribute="trailing" id="nOF-L3-4y3"/>
+                    <constraint firstItem="CcC-7e-H9r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zUe-0R-9gV"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="11I-fX-xEE"/>
+                        <exclude reference="8rO-QB-pbA"/>
+                        <exclude reference="QHX-Za-3Cy"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellSeparatorHeightConstraint" destination="Q5g-To-4LK" id="bju-up-qbN"/>
+                <outlet property="pieChartView" destination="X9q-af-xz0" id="Tzf-y0-bwf"/>
+            </connections>
+            <point key="canvasLocation" x="186.5" y="167"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STExportEmailView">
+            <rect key="frame" x="0.0" y="0.0" width="554" height="503"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDL-Wa-7jt">
+                    <rect key="frame" x="30" y="121" width="494" height="250"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Huo-Ac-r1L">
+                            <rect key="frame" x="20" y="50" width="454" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="b0Z-pN-8tz"/>
+                            </constraints>
+                            <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="9Og-P6-C4z"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9y-wC-9cA">
+                            <rect key="frame" x="0.0" y="210" width="494" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nh8-Et-ioG">
+                                    <rect key="frame" x="0.0" y="1" width="247" height="39"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="39.5" id="nT7-nT-09I"/>
+                                    </constraints>
+                                    <state key="normal" title="Cancel"/>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="nT7-nT-09I"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <action selector="cancelButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="rlA-zH-eWD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeb-As-149">
+                                    <rect key="frame" x="248" y="1" width="246" height="39"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <state key="normal" title="Send"/>
+                                    <connections>
+                                        <action selector="sendButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="SBq-dv-jr3"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="zeb-As-149" firstAttribute="top" secondItem="O9y-wC-9cA" secondAttribute="top" constant="1" id="4is-41-ODC"/>
+                                <constraint firstAttribute="bottom" secondItem="nh8-Et-ioG" secondAttribute="bottom" id="DQl-5g-ex6"/>
+                                <constraint firstAttribute="bottom" secondItem="zeb-As-149" secondAttribute="bottom" id="GTq-Rg-KlM"/>
+                                <constraint firstItem="nh8-Et-ioG" firstAttribute="leading" secondItem="O9y-wC-9cA" secondAttribute="leading" id="Iru-pN-kzi"/>
+                                <constraint firstAttribute="trailing" secondItem="zeb-As-149" secondAttribute="trailing" id="NMD-9h-qjQ"/>
+                                <constraint firstAttribute="height" constant="40" id="NQo-0k-kqN"/>
+                                <constraint firstItem="nh8-Et-ioG" firstAttribute="width" secondItem="zeb-As-149" secondAttribute="width" id="XSa-Qc-ey5"/>
+                                <constraint firstItem="zeb-As-149" firstAttribute="leading" secondItem="nh8-Et-ioG" secondAttribute="trailing" constant="1" id="XZ9-2L-7a5"/>
+                                <constraint firstItem="nh8-Et-ioG" firstAttribute="top" secondItem="O9y-wC-9cA" secondAttribute="top" constant="1" id="kzV-SX-CB8"/>
+                                <constraint firstItem="zeb-As-149" firstAttribute="leading" secondItem="nh8-Et-ioG" secondAttribute="trailing" constant="1" id="lQX-zw-rVb"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="lQX-zw-rVb"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xn-x5-knU">
+                            <rect key="frame" x="20" y="34" width="454" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="VNN-f5-Uc2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="11"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DLz-Re-lcO">
+                            <rect key="frame" x="20" y="130" width="454" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="IMj-Oc-FiC"/>
+                            </constraints>
+                            <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="yes" keyboardType="emailAddress" returnKeyType="send"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="DMi-Pz-D3s"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdN-13-R6u" userLabel="Email Address Separator">
+                            <rect key="frame" x="20" y="90" width="454" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ZUk-nz-AyQ"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIRM EMAIL ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxY-91-AB5">
+                            <rect key="frame" x="20" y="114" width="454" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="Yq7-2i-VuW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="11"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWR-zM-j0i" userLabel="Confirm Email Address Separator">
+                            <rect key="frame" x="20" y="170" width="454" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="e96-kt-7AH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="DLz-Re-lcO" firstAttribute="top" secondItem="Huo-Ac-r1L" secondAttribute="bottom" constant="40" id="0YC-pq-jgh"/>
+                        <constraint firstItem="O9y-wC-9cA" firstAttribute="leading" secondItem="PDL-Wa-7jt" secondAttribute="leading" id="5U0-RQ-kV0"/>
+                        <constraint firstItem="Huo-Ac-r1L" firstAttribute="leading" secondItem="PDL-Wa-7jt" secondAttribute="leading" constant="20" id="6UM-4s-FsN"/>
+                        <constraint firstItem="7Xn-x5-knU" firstAttribute="leading" secondItem="Huo-Ac-r1L" secondAttribute="leading" id="77m-1L-h4B"/>
+                        <constraint firstItem="DLz-Re-lcO" firstAttribute="trailing" secondItem="Huo-Ac-r1L" secondAttribute="trailing" id="9Ae-I6-4L0"/>
+                        <constraint firstItem="bxY-91-AB5" firstAttribute="trailing" secondItem="DLz-Re-lcO" secondAttribute="trailing" id="9Pe-3R-jzy"/>
+                        <constraint firstItem="Huo-Ac-r1L" firstAttribute="top" secondItem="PDL-Wa-7jt" secondAttribute="top" constant="50" id="Abx-oM-yQ6"/>
+                        <constraint firstItem="DLz-Re-lcO" firstAttribute="height" secondItem="Huo-Ac-r1L" secondAttribute="height" id="B18-IL-3cS"/>
+                        <constraint firstItem="DLz-Re-lcO" firstAttribute="leading" secondItem="Huo-Ac-r1L" secondAttribute="leading" id="CFz-bK-qSd"/>
+                        <constraint firstItem="bxY-91-AB5" firstAttribute="leading" secondItem="DLz-Re-lcO" secondAttribute="leading" id="CbS-ai-5af"/>
+                        <constraint firstAttribute="trailing" secondItem="O9y-wC-9cA" secondAttribute="trailing" id="Dl1-qG-s90"/>
+                        <constraint firstItem="PdN-13-R6u" firstAttribute="trailing" secondItem="Huo-Ac-r1L" secondAttribute="trailing" id="HcL-Ap-tUJ"/>
+                        <constraint firstItem="DLz-Re-lcO" firstAttribute="top" secondItem="bxY-91-AB5" secondAttribute="bottom" id="R9z-FZ-b77"/>
+                        <constraint firstItem="Huo-Ac-r1L" firstAttribute="top" secondItem="7Xn-x5-knU" secondAttribute="bottom" id="TFZ-Ei-5Ej"/>
+                        <constraint firstItem="LWR-zM-j0i" firstAttribute="trailing" secondItem="DLz-Re-lcO" secondAttribute="trailing" id="Wce-p4-SZY"/>
+                        <constraint firstAttribute="bottom" secondItem="O9y-wC-9cA" secondAttribute="bottom" id="XJx-nQ-O9Y"/>
+                        <constraint firstItem="PdN-13-R6u" firstAttribute="top" secondItem="Huo-Ac-r1L" secondAttribute="bottom" id="Y04-jv-ETo"/>
+                        <constraint firstAttribute="height" constant="250" id="iu6-5J-vNJ"/>
+                        <constraint firstItem="LWR-zM-j0i" firstAttribute="top" secondItem="DLz-Re-lcO" secondAttribute="bottom" id="kZf-dR-hsM"/>
+                        <constraint firstItem="7Xn-x5-knU" firstAttribute="width" secondItem="Huo-Ac-r1L" secondAttribute="width" id="n80-R9-yxl"/>
+                        <constraint firstItem="PdN-13-R6u" firstAttribute="leading" secondItem="Huo-Ac-r1L" secondAttribute="leading" id="okS-Ug-Xnp"/>
+                        <constraint firstItem="LWR-zM-j0i" firstAttribute="leading" secondItem="DLz-Re-lcO" secondAttribute="leading" id="tAc-gY-hlN"/>
+                        <constraint firstAttribute="trailing" secondItem="Huo-Ac-r1L" secondAttribute="trailing" constant="20" id="yCM-bL-Yzw"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AwD-lg-mRn" userLabel="spacerView">
+                    <rect key="frame" x="30" y="10" width="494" height="101"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PDL-Wa-7jt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="3WO-td-KFf"/>
+                <constraint firstItem="AwD-lg-mRn" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.2" id="IIu-sW-TIS"/>
+                <constraint firstAttribute="trailing" secondItem="AwD-lg-mRn" secondAttribute="trailing" constant="30" id="Qc4-J2-6Fj"/>
+                <constraint firstItem="AwD-lg-mRn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="Rdx-3s-1dj"/>
+                <constraint firstItem="AwD-lg-mRn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="frJ-2i-UIK"/>
+                <constraint firstItem="PDL-Wa-7jt" firstAttribute="top" secondItem="AwD-lg-mRn" secondAttribute="bottom" constant="10" id="hao-fW-4h0"/>
+                <constraint firstAttribute="trailing" secondItem="PDL-Wa-7jt" secondAttribute="trailing" constant="30" id="oSd-NR-gYy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmEmailLabel" destination="bxY-91-AB5" id="M3Y-2i-4hS"/>
+                <outlet property="confirmEmailSeparatorView" destination="LWR-zM-j0i" id="nRv-ZW-tiP"/>
+                <outlet property="confirmEmailTextField" destination="DLz-Re-lcO" id="tZ7-ug-h2z"/>
+                <outlet property="emailLabel" destination="7Xn-x5-knU" id="KbT-tQ-ARD"/>
+                <outlet property="emailSeparatorView" destination="PdN-13-R6u" id="nme-mv-Lg4"/>
+                <outlet property="emailTextField" destination="Huo-Ac-r1L" id="rFS-EC-dLJ"/>
+                <outlet property="popUpview" destination="PDL-Wa-7jt" id="6Sq-Yj-pA8"/>
+            </connections>
+            <point key="canvasLocation" x="318" y="252.5"/>
+        </view>
+    </objects>
+</document>

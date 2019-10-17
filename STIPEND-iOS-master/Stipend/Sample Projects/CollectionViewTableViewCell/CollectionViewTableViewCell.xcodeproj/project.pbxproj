@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D13410B1B298EB500206969 /* STSportsListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1341091B298EB500206969 /* STSportsListViewCell.m */; };
+		3D13410C1B298EB500206969 /* STSportsListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D13410A1B298EB500206969 /* STSportsListViewCell.xib */; };
+		3D1341101B298ED400206969 /* STSportsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D13410E1B298ED400206969 /* STSportsViewCell.m */; };
+		3D1341111B298ED400206969 /* STSportsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D13410F1B298ED400206969 /* STSportsViewCell.xib */; };
+		3D1341151B2991B100206969 /* STFinancialStateViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1341131B2991B100206969 /* STFinancialStateViewCell.m */; };
+		3D1341161B2991B100206969 /* STFinancialStateViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1341141B2991B100206969 /* STFinancialStateViewCell.xib */; };
+		3D13411A1B29953E00206969 /* STFinancialListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1341181B29953E00206969 /* STFinancialListViewCell.m */; };
+		3D13411B1B29953E00206969 /* STFinancialListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1341191B29953E00206969 /* STFinancialListViewCell.xib */; };
+		3D13411F1B29C42E00206969 /* STFinancialAidCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D13411D1B29C42E00206969 /* STFinancialAidCell.m */; };
+		3D1341201B29C42E00206969 /* STFinancialAidCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D13411E1B29C42E00206969 /* STFinancialAidCell.xib */; };
+		3D2341311B1CB56A00C5CA8E /* STAdmissionCodeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D23412F1B1CB56A00C5CA8E /* STAdmissionCodeViewCell.m */; };
+		3D2341321B1CB56A00C5CA8E /* STAdmissionCodeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2341301B1CB56A00C5CA8E /* STAdmissionCodeViewCell.xib */; };
+		3D2341361B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2341341B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.m */; };
+		3D2341371B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2341351B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.xib */; };
+		3D4780F61B346ECA0000C6AD /* STCalenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4780F41B346ECA0000C6AD /* STCalenderView.m */; };
+		3D4780F71B346ECA0000C6AD /* STCalenderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4780F51B346ECA0000C6AD /* STCalenderView.xib */; };
+		3D4780FB1B346EE70000C6AD /* STFinancialListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4780F91B346EE70000C6AD /* STFinancialListView.m */; };
+		3D4780FC1B346EE70000C6AD /* STFinancialListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4780FA1B346EE70000C6AD /* STFinancialListView.xib */; };
+		3D4781001B346EFE0000C6AD /* STSportsListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4780FE1B346EFE0000C6AD /* STSportsListView.m */; };
+		3D4781011B346EFE0000C6AD /* STSportsListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4780FF1B346EFE0000C6AD /* STSportsListView.xib */; };
+		3D5F88271B3BCBC500B14E6B /* STImportantDateDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F88261B3BCBC500B14E6B /* STImportantDateDetailView.m */; };
+		3D5F882A1B3BDAE000B14E6B /* STCalenderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F88291B3BDAE000B14E6B /* STCalenderFooterView.m */; };
+		3D5F882C1B3BDB2400B14E6B /* STCalenderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D5F882B1B3BDB2400B14E6B /* STCalenderFooterView.xib */; };
+		3D66E3511B39274D00F781E7 /* STImportantDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D66E3501B39274D00F781E7 /* STImportantDateView.xib */; };
+		3D66E3541B39276800F781E7 /* STImportantDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D66E3531B39276800F781E7 /* STImportantDateView.m */; };
+		3D6E451D1B1F5008008D0FC5 /* STMainDateViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E451B1B1F5008008D0FC5 /* STMainDateViewCell.m */; };
+		3D6E451E1B1F5008008D0FC5 /* STMainDateViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E451C1B1F5008008D0FC5 /* STMainDateViewCell.xib */; };
+		3D7782A71B2FECF900E72F54 /* STWeatherCastListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7782A51B2FECF900E72F54 /* STWeatherCastListCell.m */; };
+		3D7782A81B2FECF900E72F54 /* STWeatherCastListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D7782A61B2FECF900E72F54 /* STWeatherCastListCell.xib */; };
+		3D816AF81B206631006E9AE8 /* STCalenderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D816AF61B206631006E9AE8 /* STCalenderViewCell.m */; };
+		3D816AF91B206631006E9AE8 /* STCalenderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D816AF71B206631006E9AE8 /* STCalenderViewCell.xib */; };
+		3D81DD2A1B149D1A00BC7611 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DD291B149D1A00BC7611 /* main.m */; };
+		3D81DD2D1B149D1A00BC7611 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DD2C1B149D1A00BC7611 /* AppDelegate.m */; };
+		3D81DD301B149D1A00BC7611 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DD2F1B149D1A00BC7611 /* ViewController.m */; };
+		3D81DD331B149D1A00BC7611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DD311B149D1A00BC7611 /* Main.storyboard */; };
+		3D81DD351B149D1A00BC7611 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DD341B149D1A00BC7611 /* Images.xcassets */; };
+		3D81DD381B149D1A00BC7611 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DD361B149D1A00BC7611 /* LaunchScreen.xib */; };
+		3D81DD441B149D1B00BC7611 /* CollectionViewTableViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DD431B149D1B00BC7611 /* CollectionViewTableViewCellTests.m */; };
+		3D81DD501B14AE3E00BC7611 /* STCollegePageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D81DD4E1B14AE3E00BC7611 /* STCollegePageCollectionViewCell.m */; };
+		3D81DD511B14AE3E00BC7611 /* STCollegePageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D81DD4F1B14AE3E00BC7611 /* STCollegePageCollectionViewCell.xib */; };
+		3D869CE91B28349300B938FF /* STEventKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D869CE81B28349300B938FF /* STEventKitManager.m */; };
+		3D869CF21B2894B600B938FF /* STSportsDivisionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D869CF01B2894B600B938FF /* STSportsDivisionCell.m */; };
+		3D869CF31B2894B600B938FF /* STSportsDivisionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D869CF11B2894B600B938FF /* STSportsDivisionCell.xib */; };
+		3D8DA6031B3AC05E0096C4EC /* STOtherDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DA6021B3AC05E0096C4EC /* STOtherDateView.m */; };
+		3D8DA6061B3AD7020096C4EC /* STCollegeCalenderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DA6051B3AD7020096C4EC /* STCollegeCalenderViewCell.m */; };
+		3D8E8D271B2ECC3F0049630C /* STWeatherAveragesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E8D251B2ECC3F0049630C /* STWeatherAveragesCell.m */; };
+		3D8E8D281B2ECC3F0049630C /* STWeatherAveragesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E8D261B2ECC3F0049630C /* STWeatherAveragesCell.xib */; };
+		3D8E8D2C1B2EE01F0049630C /* STWeatherTemperatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E8D2A1B2EE01F0049630C /* STWeatherTemperatureCell.m */; };
+		3D8E8D2D1B2EE01F0049630C /* STWeatherTemperatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E8D2B1B2EE01F0049630C /* STWeatherTemperatureCell.xib */; };
+		3D9D592F1B32954300FFD092 /* STQuickFactsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D592D1B32954300FFD092 /* STQuickFactsViewCell.m */; };
+		3D9D59301B32954300FFD092 /* STQuickFactsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D592E1B32954300FFD092 /* STQuickFactsViewCell.xib */; };
+		3DABD2C41B2AE06D0048291F /* STWeatherViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DABD2C21B2AE06D0048291F /* STWeatherViewCell.m */; };
+		3DABD2C51B2AE06D0048291F /* STWeatherViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DABD2C31B2AE06D0048291F /* STWeatherViewCell.xib */; };
+		3DABD2C71B2AE0EA0048291F /* Screen Shot 2015-06-12 at 3.11.00 pm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DABD2C61B2AE0EA0048291F /* Screen Shot 2015-06-12 at 3.11.00 pm.png */; };
+		3DABD2CE1B2AE77A0048291F /* STCollegeRankingsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DABD2CC1B2AE77A0048291F /* STCollegeRankingsViewCell.m */; };
+		3DABD2CF1B2AE77A0048291F /* STCollegeRankingsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DABD2CD1B2AE77A0048291F /* STCollegeRankingsViewCell.xib */; };
+		3DABD2D11B2AEB270048291F /* blueColorImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DABD2D01B2AEB270048291F /* blueColorImg.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D81DD3E1B149D1B00BC7611 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D81DD1C1B149D1A00BC7611 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D81DD231B149D1A00BC7611;
+			remoteInfo = CollectionViewTableViewCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D1341081B298EB500206969 /* STSportsListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSportsListViewCell.h; sourceTree = "<group>"; };
+		3D1341091B298EB500206969 /* STSportsListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSportsListViewCell.m; sourceTree = "<group>"; };
+		3D13410A1B298EB500206969 /* STSportsListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STSportsListViewCell.xib; sourceTree = "<group>"; };
+		3D13410D1B298ED400206969 /* STSportsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSportsViewCell.h; sourceTree = "<group>"; };
+		3D13410E1B298ED400206969 /* STSportsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSportsViewCell.m; sourceTree = "<group>"; };
+		3D13410F1B298ED400206969 /* STSportsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STSportsViewCell.xib; sourceTree = "<group>"; };
+		3D1341121B2991B100206969 /* STFinancialStateViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFinancialStateViewCell.h; sourceTree = "<group>"; };
+		3D1341131B2991B100206969 /* STFinancialStateViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFinancialStateViewCell.m; sourceTree = "<group>"; };
+		3D1341141B2991B100206969 /* STFinancialStateViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFinancialStateViewCell.xib; sourceTree = "<group>"; };
+		3D1341171B29953D00206969 /* STFinancialListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFinancialListViewCell.h; sourceTree = "<group>"; };
+		3D1341181B29953E00206969 /* STFinancialListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFinancialListViewCell.m; sourceTree = "<group>"; };
+		3D1341191B29953E00206969 /* STFinancialListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFinancialListViewCell.xib; sourceTree = "<group>"; };
+		3D13411C1B29C42E00206969 /* STFinancialAidCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFinancialAidCell.h; sourceTree = "<group>"; };
+		3D13411D1B29C42E00206969 /* STFinancialAidCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFinancialAidCell.m; sourceTree = "<group>"; };
+		3D13411E1B29C42E00206969 /* STFinancialAidCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFinancialAidCell.xib; sourceTree = "<group>"; };
+		3D23412E1B1CB56A00C5CA8E /* STAdmissionCodeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAdmissionCodeViewCell.h; sourceTree = "<group>"; };
+		3D23412F1B1CB56A00C5CA8E /* STAdmissionCodeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAdmissionCodeViewCell.m; sourceTree = "<group>"; };
+		3D2341301B1CB56A00C5CA8E /* STAdmissionCodeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STAdmissionCodeViewCell.xib; sourceTree = "<group>"; };
+		3D2341331B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAdmissionSwitchViewCell.h; sourceTree = "<group>"; };
+		3D2341341B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAdmissionSwitchViewCell.m; sourceTree = "<group>"; };
+		3D2341351B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STAdmissionSwitchViewCell.xib; sourceTree = "<group>"; };
+		3D4780F31B346ECA0000C6AD /* STCalenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCalenderView.h; sourceTree = "<group>"; };
+		3D4780F41B346ECA0000C6AD /* STCalenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCalenderView.m; sourceTree = "<group>"; };
+		3D4780F51B346ECA0000C6AD /* STCalenderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCalenderView.xib; sourceTree = "<group>"; };
+		3D4780F81B346EE70000C6AD /* STFinancialListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFinancialListView.h; sourceTree = "<group>"; };
+		3D4780F91B346EE70000C6AD /* STFinancialListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFinancialListView.m; sourceTree = "<group>"; };
+		3D4780FA1B346EE70000C6AD /* STFinancialListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFinancialListView.xib; sourceTree = "<group>"; };
+		3D4780FD1B346EFE0000C6AD /* STSportsListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSportsListView.h; sourceTree = "<group>"; };
+		3D4780FE1B346EFE0000C6AD /* STSportsListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSportsListView.m; sourceTree = "<group>"; };
+		3D4780FF1B346EFE0000C6AD /* STSportsListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STSportsListView.xib; sourceTree = "<group>"; };
+		3D5F88251B3BCBC500B14E6B /* STImportantDateDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STImportantDateDetailView.h; sourceTree = "<group>"; };
+		3D5F88261B3BCBC500B14E6B /* STImportantDateDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STImportantDateDetailView.m; sourceTree = "<group>"; };
+		3D5F88281B3BDAE000B14E6B /* STCalenderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCalenderFooterView.h; sourceTree = "<group>"; };
+		3D5F88291B3BDAE000B14E6B /* STCalenderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCalenderFooterView.m; sourceTree = "<group>"; };
+		3D5F882B1B3BDB2400B14E6B /* STCalenderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCalenderFooterView.xib; sourceTree = "<group>"; };
+		3D66E3501B39274D00F781E7 /* STImportantDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STImportantDateView.xib; sourceTree = "<group>"; };
+		3D66E3521B39276800F781E7 /* STImportantDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STImportantDateView.h; sourceTree = "<group>"; };
+		3D66E3531B39276800F781E7 /* STImportantDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STImportantDateView.m; sourceTree = "<group>"; };
+		3D6E451A1B1F5008008D0FC5 /* STMainDateViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMainDateViewCell.h; sourceTree = "<group>"; };
+		3D6E451B1B1F5008008D0FC5 /* STMainDateViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMainDateViewCell.m; sourceTree = "<group>"; };
+		3D6E451C1B1F5008008D0FC5 /* STMainDateViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMainDateViewCell.xib; sourceTree = "<group>"; };
+		3D7250A71B1C285600361B56 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		3D7782A41B2FECF900E72F54 /* STWeatherCastListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWeatherCastListCell.h; sourceTree = "<group>"; };
+		3D7782A51B2FECF900E72F54 /* STWeatherCastListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWeatherCastListCell.m; sourceTree = "<group>"; };
+		3D7782A61B2FECF900E72F54 /* STWeatherCastListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STWeatherCastListCell.xib; sourceTree = "<group>"; };
+		3D816AF51B206631006E9AE8 /* STCalenderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCalenderViewCell.h; sourceTree = "<group>"; };
+		3D816AF61B206631006E9AE8 /* STCalenderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCalenderViewCell.m; sourceTree = "<group>"; };
+		3D816AF71B206631006E9AE8 /* STCalenderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCalenderViewCell.xib; sourceTree = "<group>"; };
+		3D81DD241B149D1A00BC7611 /* CollectionViewTableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewTableViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D81DD281B149D1A00BC7611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D81DD291B149D1A00BC7611 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D81DD2B1B149D1A00BC7611 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D81DD2C1B149D1A00BC7611 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D81DD2E1B149D1A00BC7611 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3D81DD2F1B149D1A00BC7611 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D81DD321B149D1A00BC7611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D81DD341B149D1A00BC7611 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D81DD371B149D1A00BC7611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3D81DD3D1B149D1B00BC7611 /* CollectionViewTableViewCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewTableViewCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D81DD421B149D1B00BC7611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D81DD431B149D1B00BC7611 /* CollectionViewTableViewCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewTableViewCellTests.m; sourceTree = "<group>"; };
+		3D81DD4D1B14AE3E00BC7611 /* STCollegePageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollegePageCollectionViewCell.h; sourceTree = "<group>"; };
+		3D81DD4E1B14AE3E00BC7611 /* STCollegePageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollegePageCollectionViewCell.m; sourceTree = "<group>"; };
+		3D81DD4F1B14AE3E00BC7611 /* STCollegePageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCollegePageCollectionViewCell.xib; sourceTree = "<group>"; };
+		3D869CE71B28349300B938FF /* STEventKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STEventKitManager.h; sourceTree = "<group>"; };
+		3D869CE81B28349300B938FF /* STEventKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STEventKitManager.m; sourceTree = "<group>"; };
+		3D869CEF1B2894B600B938FF /* STSportsDivisionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSportsDivisionCell.h; sourceTree = "<group>"; };
+		3D869CF01B2894B600B938FF /* STSportsDivisionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSportsDivisionCell.m; sourceTree = "<group>"; };
+		3D869CF11B2894B600B938FF /* STSportsDivisionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STSportsDivisionCell.xib; sourceTree = "<group>"; };
+		3D8DA6011B3AC05E0096C4EC /* STOtherDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STOtherDateView.h; sourceTree = "<group>"; };
+		3D8DA6021B3AC05E0096C4EC /* STOtherDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STOtherDateView.m; sourceTree = "<group>"; };
+		3D8DA6041B3AD7020096C4EC /* STCollegeCalenderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollegeCalenderViewCell.h; sourceTree = "<group>"; };
+		3D8DA6051B3AD7020096C4EC /* STCollegeCalenderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollegeCalenderViewCell.m; sourceTree = "<group>"; };
+		3D8E8D241B2ECC3F0049630C /* STWeatherAveragesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWeatherAveragesCell.h; sourceTree = "<group>"; };
+		3D8E8D251B2ECC3F0049630C /* STWeatherAveragesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWeatherAveragesCell.m; sourceTree = "<group>"; };
+		3D8E8D261B2ECC3F0049630C /* STWeatherAveragesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STWeatherAveragesCell.xib; sourceTree = "<group>"; };
+		3D8E8D291B2EE01F0049630C /* STWeatherTemperatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWeatherTemperatureCell.h; sourceTree = "<group>"; };
+		3D8E8D2A1B2EE01F0049630C /* STWeatherTemperatureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWeatherTemperatureCell.m; sourceTree = "<group>"; };
+		3D8E8D2B1B2EE01F0049630C /* STWeatherTemperatureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STWeatherTemperatureCell.xib; sourceTree = "<group>"; };
+		3D9D592C1B32954300FFD092 /* STQuickFactsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STQuickFactsViewCell.h; sourceTree = "<group>"; };
+		3D9D592D1B32954300FFD092 /* STQuickFactsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STQuickFactsViewCell.m; sourceTree = "<group>"; };
+		3D9D592E1B32954300FFD092 /* STQuickFactsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STQuickFactsViewCell.xib; sourceTree = "<group>"; };
+		3DABD2C11B2AE06D0048291F /* STWeatherViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWeatherViewCell.h; sourceTree = "<group>"; };
+		3DABD2C21B2AE06D0048291F /* STWeatherViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWeatherViewCell.m; sourceTree = "<group>"; };
+		3DABD2C31B2AE06D0048291F /* STWeatherViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STWeatherViewCell.xib; sourceTree = "<group>"; };
+		3DABD2C61B2AE0EA0048291F /* Screen Shot 2015-06-12 at 3.11.00 pm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2015-06-12 at 3.11.00 pm.png"; sourceTree = "<group>"; };
+		3DABD2CB1B2AE77A0048291F /* STCollegeRankingsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollegeRankingsViewCell.h; sourceTree = "<group>"; };
+		3DABD2CC1B2AE77A0048291F /* STCollegeRankingsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollegeRankingsViewCell.m; sourceTree = "<group>"; };
+		3DABD2CD1B2AE77A0048291F /* STCollegeRankingsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STCollegeRankingsViewCell.xib; sourceTree = "<group>"; };
+		3DABD2D01B2AEB270048291F /* blueColorImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueColorImg.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D81DD211B149D1A00BC7611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D81DD3A1B149D1B00BC7611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D4780F21B346EA80000C6AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D4780FD1B346EFE0000C6AD /* STSportsListView.h */,
+				3D4780FE1B346EFE0000C6AD /* STSportsListView.m */,
+				3D4780FF1B346EFE0000C6AD /* STSportsListView.xib */,
+				3D4780F81B346EE70000C6AD /* STFinancialListView.h */,
+				3D4780F91B346EE70000C6AD /* STFinancialListView.m */,
+				3D4780FA1B346EE70000C6AD /* STFinancialListView.xib */,
+				3D4780F31B346ECA0000C6AD /* STCalenderView.h */,
+				3D4780F41B346ECA0000C6AD /* STCalenderView.m */,
+				3D4780F51B346ECA0000C6AD /* STCalenderView.xib */,
+				3D66E3501B39274D00F781E7 /* STImportantDateView.xib */,
+				3D66E3521B39276800F781E7 /* STImportantDateView.h */,
+				3D66E3531B39276800F781E7 /* STImportantDateView.m */,
+				3D8DA6011B3AC05E0096C4EC /* STOtherDateView.h */,
+				3D8DA6021B3AC05E0096C4EC /* STOtherDateView.m */,
+				3D5F88251B3BCBC500B14E6B /* STImportantDateDetailView.h */,
+				3D5F88261B3BCBC500B14E6B /* STImportantDateDetailView.m */,
+				3D5F88281B3BDAE000B14E6B /* STCalenderFooterView.h */,
+				3D5F88291B3BDAE000B14E6B /* STCalenderFooterView.m */,
+				3D5F882B1B3BDB2400B14E6B /* STCalenderFooterView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3D7250A81B1C2FB800361B56 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				3D9D592C1B32954300FFD092 /* STQuickFactsViewCell.h */,
+				3D9D592D1B32954300FFD092 /* STQuickFactsViewCell.m */,
+				3D9D592E1B32954300FFD092 /* STQuickFactsViewCell.xib */,
+				3D23412E1B1CB56A00C5CA8E /* STAdmissionCodeViewCell.h */,
+				3D23412F1B1CB56A00C5CA8E /* STAdmissionCodeViewCell.m */,
+				3D2341301B1CB56A00C5CA8E /* STAdmissionCodeViewCell.xib */,
+				3D2341331B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.h */,
+				3D2341341B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.m */,
+				3D2341351B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.xib */,
+				3D6E451A1B1F5008008D0FC5 /* STMainDateViewCell.h */,
+				3D6E451B1B1F5008008D0FC5 /* STMainDateViewCell.m */,
+				3D6E451C1B1F5008008D0FC5 /* STMainDateViewCell.xib */,
+				3D816AF51B206631006E9AE8 /* STCalenderViewCell.h */,
+				3D816AF61B206631006E9AE8 /* STCalenderViewCell.m */,
+				3D816AF71B206631006E9AE8 /* STCalenderViewCell.xib */,
+				3D869CEF1B2894B600B938FF /* STSportsDivisionCell.h */,
+				3D869CF01B2894B600B938FF /* STSportsDivisionCell.m */,
+				3D869CF11B2894B600B938FF /* STSportsDivisionCell.xib */,
+				3D1341081B298EB500206969 /* STSportsListViewCell.h */,
+				3D1341091B298EB500206969 /* STSportsListViewCell.m */,
+				3D13410A1B298EB500206969 /* STSportsListViewCell.xib */,
+				3D13410D1B298ED400206969 /* STSportsViewCell.h */,
+				3D13410E1B298ED400206969 /* STSportsViewCell.m */,
+				3D13410F1B298ED400206969 /* STSportsViewCell.xib */,
+				3D1341121B2991B100206969 /* STFinancialStateViewCell.h */,
+				3D1341131B2991B100206969 /* STFinancialStateViewCell.m */,
+				3D1341141B2991B100206969 /* STFinancialStateViewCell.xib */,
+				3D1341171B29953D00206969 /* STFinancialListViewCell.h */,
+				3D1341181B29953E00206969 /* STFinancialListViewCell.m */,
+				3D1341191B29953E00206969 /* STFinancialListViewCell.xib */,
+				3D13411C1B29C42E00206969 /* STFinancialAidCell.h */,
+				3D13411D1B29C42E00206969 /* STFinancialAidCell.m */,
+				3D13411E1B29C42E00206969 /* STFinancialAidCell.xib */,
+				3D7782A41B2FECF900E72F54 /* STWeatherCastListCell.h */,
+				3D7782A51B2FECF900E72F54 /* STWeatherCastListCell.m */,
+				3D7782A61B2FECF900E72F54 /* STWeatherCastListCell.xib */,
+				3DABD2C11B2AE06D0048291F /* STWeatherViewCell.h */,
+				3DABD2C21B2AE06D0048291F /* STWeatherViewCell.m */,
+				3DABD2C31B2AE06D0048291F /* STWeatherViewCell.xib */,
+				3DABD2CB1B2AE77A0048291F /* STCollegeRankingsViewCell.h */,
+				3DABD2CC1B2AE77A0048291F /* STCollegeRankingsViewCell.m */,
+				3DABD2CD1B2AE77A0048291F /* STCollegeRankingsViewCell.xib */,
+				3D8E8D241B2ECC3F0049630C /* STWeatherAveragesCell.h */,
+				3D8E8D251B2ECC3F0049630C /* STWeatherAveragesCell.m */,
+				3D8E8D261B2ECC3F0049630C /* STWeatherAveragesCell.xib */,
+				3D8E8D291B2EE01F0049630C /* STWeatherTemperatureCell.h */,
+				3D8E8D2A1B2EE01F0049630C /* STWeatherTemperatureCell.m */,
+				3D8E8D2B1B2EE01F0049630C /* STWeatherTemperatureCell.xib */,
+				3D8DA6041B3AD7020096C4EC /* STCollegeCalenderViewCell.h */,
+				3D8DA6051B3AD7020096C4EC /* STCollegeCalenderViewCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		3D81DD1B1B149D1A00BC7611 = {
+			isa = PBXGroup;
+			children = (
+				3D81DD261B149D1A00BC7611 /* CollectionViewTableViewCell */,
+				3D81DD401B149D1B00BC7611 /* CollectionViewTableViewCellTests */,
+				3D81DD251B149D1A00BC7611 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D81DD251B149D1A00BC7611 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D81DD241B149D1A00BC7611 /* CollectionViewTableViewCell.app */,
+				3D81DD3D1B149D1B00BC7611 /* CollectionViewTableViewCellTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D81DD261B149D1A00BC7611 /* CollectionViewTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3D4780F21B346EA80000C6AD /* Views */,
+				3D869CE31B28340C00B938FF /* Model */,
+				3D7250A81B1C2FB800361B56 /* TableViewCells */,
+				3D81DD2B1B149D1A00BC7611 /* AppDelegate.h */,
+				3D81DD2C1B149D1A00BC7611 /* AppDelegate.m */,
+				3D81DD2E1B149D1A00BC7611 /* ViewController.h */,
+				3D81DD2F1B149D1A00BC7611 /* ViewController.m */,
+				3D81DD311B149D1A00BC7611 /* Main.storyboard */,
+				3D81DD341B149D1A00BC7611 /* Images.xcassets */,
+				3D81DD361B149D1A00BC7611 /* LaunchScreen.xib */,
+				3D81DD271B149D1A00BC7611 /* Supporting Files */,
+				3D81DD4D1B14AE3E00BC7611 /* STCollegePageCollectionViewCell.h */,
+				3D81DD4E1B14AE3E00BC7611 /* STCollegePageCollectionViewCell.m */,
+				3D81DD4F1B14AE3E00BC7611 /* STCollegePageCollectionViewCell.xib */,
+				3D7250A71B1C285600361B56 /* Constants.h */,
+			);
+			path = CollectionViewTableViewCell;
+			sourceTree = "<group>";
+		};
+		3D81DD271B149D1A00BC7611 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DABD2D01B2AEB270048291F /* blueColorImg.jpg */,
+				3DABD2C61B2AE0EA0048291F /* Screen Shot 2015-06-12 at 3.11.00 pm.png */,
+				3D81DD281B149D1A00BC7611 /* Info.plist */,
+				3D81DD291B149D1A00BC7611 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D81DD401B149D1B00BC7611 /* CollectionViewTableViewCellTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D81DD431B149D1B00BC7611 /* CollectionViewTableViewCellTests.m */,
+				3D81DD411B149D1B00BC7611 /* Supporting Files */,
+			);
+			path = CollectionViewTableViewCellTests;
+			sourceTree = "<group>";
+		};
+		3D81DD411B149D1B00BC7611 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D81DD421B149D1B00BC7611 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D869CE31B28340C00B938FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D869CE71B28349300B938FF /* STEventKitManager.h */,
+				3D869CE81B28349300B938FF /* STEventKitManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D81DD231B149D1A00BC7611 /* CollectionViewTableViewCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D81DD471B149D1B00BC7611 /* Build configuration list for PBXNativeTarget "CollectionViewTableViewCell" */;
+			buildPhases = (
+				3D81DD201B149D1A00BC7611 /* Sources */,
+				3D81DD211B149D1A00BC7611 /* Frameworks */,
+				3D81DD221B149D1A00BC7611 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollectionViewTableViewCell;
+			productName = CollectionViewTableViewCell;
+			productReference = 3D81DD241B149D1A00BC7611 /* CollectionViewTableViewCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D81DD3C1B149D1B00BC7611 /* CollectionViewTableViewCellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D81DD4A1B149D1B00BC7611 /* Build configuration list for PBXNativeTarget "CollectionViewTableViewCellTests" */;
+			buildPhases = (
+				3D81DD391B149D1B00BC7611 /* Sources */,
+				3D81DD3A1B149D1B00BC7611 /* Frameworks */,
+				3D81DD3B1B149D1B00BC7611 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D81DD3F1B149D1B00BC7611 /* PBXTargetDependency */,
+			);
+			name = CollectionViewTableViewCellTests;
+			productName = CollectionViewTableViewCellTests;
+			productReference = 3D81DD3D1B149D1B00BC7611 /* CollectionViewTableViewCellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D81DD1C1B149D1A00BC7611 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Sourcebits;
+				TargetAttributes = {
+					3D81DD231B149D1A00BC7611 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					3D81DD3C1B149D1B00BC7611 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 3D81DD231B149D1A00BC7611;
+					};
+				};
+			};
+			buildConfigurationList = 3D81DD1F1B149D1A00BC7611 /* Build configuration list for PBXProject "CollectionViewTableViewCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D81DD1B1B149D1A00BC7611;
+			productRefGroup = 3D81DD251B149D1A00BC7611 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D81DD231B149D1A00BC7611 /* CollectionViewTableViewCell */,
+				3D81DD3C1B149D1B00BC7611 /* CollectionViewTableViewCellTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D81DD221B149D1A00BC7611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2341321B1CB56A00C5CA8E /* STAdmissionCodeViewCell.xib in Resources */,
+				3DABD2CF1B2AE77A0048291F /* STCollegeRankingsViewCell.xib in Resources */,
+				3D8E8D2D1B2EE01F0049630C /* STWeatherTemperatureCell.xib in Resources */,
+				3D869CF31B2894B600B938FF /* STSportsDivisionCell.xib in Resources */,
+				3D2341371B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.xib in Resources */,
+				3DABD2C51B2AE06D0048291F /* STWeatherViewCell.xib in Resources */,
+				3D8E8D281B2ECC3F0049630C /* STWeatherAveragesCell.xib in Resources */,
+				3D81DD331B149D1A00BC7611 /* Main.storyboard in Resources */,
+				3D4780F71B346ECA0000C6AD /* STCalenderView.xib in Resources */,
+				3D81DD381B149D1A00BC7611 /* LaunchScreen.xib in Resources */,
+				3D66E3511B39274D00F781E7 /* STImportantDateView.xib in Resources */,
+				3D9D59301B32954300FFD092 /* STQuickFactsViewCell.xib in Resources */,
+				3DABD2D11B2AEB270048291F /* blueColorImg.jpg in Resources */,
+				3D13411B1B29953E00206969 /* STFinancialListViewCell.xib in Resources */,
+				3DABD2C71B2AE0EA0048291F /* Screen Shot 2015-06-12 at 3.11.00 pm.png in Resources */,
+				3D13410C1B298EB500206969 /* STSportsListViewCell.xib in Resources */,
+				3D1341201B29C42E00206969 /* STFinancialAidCell.xib in Resources */,
+				3D6E451E1B1F5008008D0FC5 /* STMainDateViewCell.xib in Resources */,
+				3D81DD511B14AE3E00BC7611 /* STCollegePageCollectionViewCell.xib in Resources */,
+				3D4781011B346EFE0000C6AD /* STSportsListView.xib in Resources */,
+				3D7782A81B2FECF900E72F54 /* STWeatherCastListCell.xib in Resources */,
+				3D4780FC1B346EE70000C6AD /* STFinancialListView.xib in Resources */,
+				3D81DD351B149D1A00BC7611 /* Images.xcassets in Resources */,
+				3D5F882C1B3BDB2400B14E6B /* STCalenderFooterView.xib in Resources */,
+				3D1341161B2991B100206969 /* STFinancialStateViewCell.xib in Resources */,
+				3D816AF91B206631006E9AE8 /* STCalenderViewCell.xib in Resources */,
+				3D1341111B298ED400206969 /* STSportsViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D81DD3B1B149D1B00BC7611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D81DD201B149D1A00BC7611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DABD2C41B2AE06D0048291F /* STWeatherViewCell.m in Sources */,
+				3D81DD301B149D1A00BC7611 /* ViewController.m in Sources */,
+				3D1341151B2991B100206969 /* STFinancialStateViewCell.m in Sources */,
+				3DABD2CE1B2AE77A0048291F /* STCollegeRankingsViewCell.m in Sources */,
+				3D9D592F1B32954300FFD092 /* STQuickFactsViewCell.m in Sources */,
+				3D81DD2D1B149D1A00BC7611 /* AppDelegate.m in Sources */,
+				3D1341101B298ED400206969 /* STSportsViewCell.m in Sources */,
+				3D4780FB1B346EE70000C6AD /* STFinancialListView.m in Sources */,
+				3D2341361B1CDD3000C5CA8E /* STAdmissionSwitchViewCell.m in Sources */,
+				3D13411A1B29953E00206969 /* STFinancialListViewCell.m in Sources */,
+				3D81DD501B14AE3E00BC7611 /* STCollegePageCollectionViewCell.m in Sources */,
+				3D13411F1B29C42E00206969 /* STFinancialAidCell.m in Sources */,
+				3D869CE91B28349300B938FF /* STEventKitManager.m in Sources */,
+				3D13410B1B298EB500206969 /* STSportsListViewCell.m in Sources */,
+				3D5F882A1B3BDAE000B14E6B /* STCalenderFooterView.m in Sources */,
+				3D869CF21B2894B600B938FF /* STSportsDivisionCell.m in Sources */,
+				3D5F88271B3BCBC500B14E6B /* STImportantDateDetailView.m in Sources */,
+				3D8E8D271B2ECC3F0049630C /* STWeatherAveragesCell.m in Sources */,
+				3D6E451D1B1F5008008D0FC5 /* STMainDateViewCell.m in Sources */,
+				3D2341311B1CB56A00C5CA8E /* STAdmissionCodeViewCell.m in Sources */,
+				3D4780F61B346ECA0000C6AD /* STCalenderView.m in Sources */,
+				3D66E3541B39276800F781E7 /* STImportantDateView.m in Sources */,
+				3D8DA6031B3AC05E0096C4EC /* STOtherDateView.m in Sources */,
+				3D7782A71B2FECF900E72F54 /* STWeatherCastListCell.m in Sources */,
+				3D8E8D2C1B2EE01F0049630C /* STWeatherTemperatureCell.m in Sources */,
+				3D81DD2A1B149D1A00BC7611 /* main.m in Sources */,
+				3D4781001B346EFE0000C6AD /* STSportsListView.m in Sources */,
+				3D816AF81B206631006E9AE8 /* STCalenderViewCell.m in Sources */,
+				3D8DA6061B3AD7020096C4EC /* STCollegeCalenderViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D81DD391B149D1B00BC7611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D81DD441B149D1B00BC7611 /* CollectionViewTableViewCellTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D81DD3F1B149D1B00BC7611 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D81DD231B149D1A00BC7611 /* CollectionViewTableViewCell */;
+			targetProxy = 3D81DD3E1B149D1B00BC7611 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D81DD311B149D1A00BC7611 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D81DD321B149D1A00BC7611 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D81DD361B149D1A00BC7611 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D81DD371B149D1A00BC7611 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D81DD451B149D1B00BC7611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D81DD461B149D1B00BC7611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D81DD481B149D1B00BC7611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CollectionViewTableViewCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D81DD491B149D1B00BC7611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CollectionViewTableViewCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D81DD4B1B149D1B00BC7611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CollectionViewTableViewCellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectionViewTableViewCell.app/CollectionViewTableViewCell";
+			};
+			name = Debug;
+		};
+		3D81DD4C1B149D1B00BC7611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CollectionViewTableViewCellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollectionViewTableViewCell.app/CollectionViewTableViewCell";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D81DD1F1B149D1A00BC7611 /* Build configuration list for PBXProject "CollectionViewTableViewCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D81DD451B149D1B00BC7611 /* Debug */,
+				3D81DD461B149D1B00BC7611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D81DD471B149D1B00BC7611 /* Build configuration list for PBXNativeTarget "CollectionViewTableViewCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D81DD481B149D1B00BC7611 /* Debug */,
+				3D81DD491B149D1B00BC7611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D81DD4A1B149D1B00BC7611 /* Build configuration list for PBXNativeTarget "CollectionViewTableViewCellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D81DD4B1B149D1B00BC7611 /* Debug */,
+				3D81DD4C1B149D1B00BC7611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D81DD1C1B149D1A00BC7611 /* Project object */;
+}

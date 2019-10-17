@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CallAndMessageCell" id="KGk-i7-Jjw" customClass="CallAndMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONv-fI-cE1">
+                        <rect key="frame" x="8" y="8" width="304" height="27"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uRF-5q-tIM"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n0T-9a-lGQ">
+                        <rect key="frame" x="10" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="3MH-MU-MbE"/>
+                            <constraint firstAttribute="height" constant="30" id="WUF-MB-orU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKg-Q4-7UY">
+                        <rect key="frame" x="50" y="9" width="250" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="oMq-Fd-XbF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wKg-Q4-7UY" secondAttribute="trailing" constant="20" id="6fk-a2-kOk"/>
+                    <constraint firstAttribute="centerY" secondItem="wKg-Q4-7UY" secondAttribute="centerY" id="6kh-KK-CyY"/>
+                    <constraint firstItem="n0T-9a-lGQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="C2Q-0K-WTv"/>
+                    <constraint firstAttribute="centerY" secondItem="n0T-9a-lGQ" secondAttribute="centerY" id="Gz7-Dt-e0q"/>
+                    <constraint firstItem="ONv-fI-cE1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="O57-7T-tIa"/>
+                    <constraint firstItem="wKg-Q4-7UY" firstAttribute="leading" secondItem="n0T-9a-lGQ" secondAttribute="trailing" constant="10" id="QIK-Dm-KfH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ONv-fI-cE1" secondAttribute="bottom" id="ZSz-LE-7QA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ONv-fI-cE1" secondAttribute="trailing" id="fPq-jn-d2U"/>
+                    <constraint firstItem="ONv-fI-cE1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="g4V-bz-63G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellIcon" destination="n0T-9a-lGQ" id="l0l-Wb-3sT"/>
+                <outlet property="cellTitle" destination="wKg-Q4-7UY" id="mMY-b7-hUH"/>
+                <outlet property="clickButton" destination="ONv-fI-cE1" id="Kj9-Bf-WBV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

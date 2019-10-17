@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STCalenderFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="640" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap a date to add it to your calendar." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NgG-ZO-Aw1">
+                    <rect key="frame" x="0.0" y="15" width="640" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="GZV-PD-H7C"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
+                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NgG-ZO-Aw1" secondAttribute="trailing" id="0ms-ic-BJ9"/>
+                <constraint firstAttribute="bottom" secondItem="NgG-ZO-Aw1" secondAttribute="bottom" priority="999" constant="30" id="C5n-sR-VyN"/>
+                <constraint firstAttribute="centerX" secondItem="NgG-ZO-Aw1" secondAttribute="centerX" id="QIJ-KZ-jYg"/>
+                <constraint firstAttribute="centerY" secondItem="NgG-ZO-Aw1" secondAttribute="centerY" id="SJZ-81-Nue"/>
+                <constraint firstItem="NgG-ZO-Aw1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aTa-vx-01X"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="C5n-sR-VyN"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="555" y="143"/>
+        </view>
+    </objects>
+</document>

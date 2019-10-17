@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalenderCellIdentifier" rowHeight="72" id="KGk-i7-Jjw" customClass="STCalenderViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iax-UE-zak" userLabel="FirstHalfDayLabel">
+                        <rect key="frame" x="10" y="4" width="28" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Np8-ID-1Nd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hfn-IN-GeN" userLabel="FirstHalfMonthLabel">
+                        <rect key="frame" x="10" y="49" width="33" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="SAT Scores Due" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PMT-5a-4fh" userLabel="FIrstHalfLabel">
+                        <rect key="frame" x="53" y="22" width="131" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRl-d4-AaI" userLabel="FirstButton">
+                        <rect key="frame" x="10" y="4" width="33" height="66"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onDateButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vrc-Ej-IvZ"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-Sf-2D7" userLabel="SecondHalfDayLabel">
+                        <rect key="frame" x="194" y="4" width="28" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lpR-2V-ntC" userLabel="SecondHalfMonthLabel">
+                        <rect key="frame" x="194" y="49" width="33" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAT Scores Due" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vkb-k0-tdo" userLabel="SecondHalfLabel">
+                        <rect key="frame" x="232" y="26" width="131" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00H-dD-Pf4" userLabel="SecondButton">
+                        <rect key="frame" x="194" y="4" width="33" height="66"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onDateButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WMv-2o-j1d"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hfn-IN-GeN" firstAttribute="bottom" secondItem="SRl-d4-AaI" secondAttribute="bottom" id="4rp-eH-Xq5"/>
+                    <constraint firstItem="00H-dD-Pf4" firstAttribute="leading" secondItem="lpR-2V-ntC" secondAttribute="leading" id="7HM-lq-rLy"/>
+                    <constraint firstItem="00H-dD-Pf4" firstAttribute="top" secondItem="zIk-Sf-2D7" secondAttribute="top" id="FbK-Ly-5oB"/>
+                    <constraint firstItem="lpR-2V-ntC" firstAttribute="top" secondItem="hfn-IN-GeN" secondAttribute="top" id="GJ8-DO-wu7"/>
+                    <constraint firstItem="zIk-Sf-2D7" firstAttribute="leading" secondItem="PMT-5a-4fh" secondAttribute="trailing" constant="10" id="HEU-XK-8Cq"/>
+                    <constraint firstAttribute="trailing" secondItem="Vkb-k0-tdo" secondAttribute="trailing" constant="14" id="HOt-nT-gkO"/>
+                    <constraint firstItem="hfn-IN-GeN" firstAttribute="top" secondItem="iax-UE-zak" secondAttribute="bottom" constant="10" id="Hgn-CQ-KKR"/>
+                    <constraint firstItem="zIk-Sf-2D7" firstAttribute="width" secondItem="iax-UE-zak" secondAttribute="width" id="LZN-pG-Yfs"/>
+                    <constraint firstItem="00H-dD-Pf4" firstAttribute="bottom" secondItem="lpR-2V-ntC" secondAttribute="bottom" id="MIS-sG-V0a"/>
+                    <constraint firstItem="hfn-IN-GeN" firstAttribute="trailing" secondItem="SRl-d4-AaI" secondAttribute="trailing" id="O16-ud-Zjn"/>
+                    <constraint firstItem="PMT-5a-4fh" firstAttribute="leading" secondItem="hfn-IN-GeN" secondAttribute="trailing" constant="10" id="PLc-Wx-gYY"/>
+                    <constraint firstItem="zIk-Sf-2D7" firstAttribute="height" secondItem="iax-UE-zak" secondAttribute="height" id="QcD-bj-CZD"/>
+                    <constraint firstItem="iax-UE-zak" firstAttribute="top" secondItem="SRl-d4-AaI" secondAttribute="top" id="RNI-Rd-rou"/>
+                    <constraint firstItem="hfn-IN-GeN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VVP-3r-Wbb"/>
+                    <constraint firstItem="iax-UE-zak" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="XbD-IO-msQ"/>
+                    <constraint firstItem="lpR-2V-ntC" firstAttribute="width" secondItem="hfn-IN-GeN" secondAttribute="width" id="haU-lx-oo9"/>
+                    <constraint firstItem="iax-UE-zak" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="if7-HN-oCL"/>
+                    <constraint firstItem="zIk-Sf-2D7" firstAttribute="top" secondItem="iax-UE-zak" secondAttribute="top" id="oOZ-0P-gwc"/>
+                    <constraint firstItem="Vkb-k0-tdo" firstAttribute="leading" secondItem="zIk-Sf-2D7" secondAttribute="trailing" constant="10" id="qSG-pg-pkn"/>
+                    <constraint firstItem="hfn-IN-GeN" firstAttribute="leading" secondItem="SRl-d4-AaI" secondAttribute="leading" id="s6i-xc-wpz"/>
+                    <constraint firstItem="PMT-5a-4fh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="wep-YM-2zQ"/>
+                    <constraint firstItem="00H-dD-Pf4" firstAttribute="trailing" secondItem="lpR-2V-ntC" secondAttribute="trailing" id="x67-Vz-HCO"/>
+                    <constraint firstItem="PMT-5a-4fh" firstAttribute="width" secondItem="Vkb-k0-tdo" secondAttribute="width" id="xKH-jG-HHw"/>
+                    <constraint firstItem="lpR-2V-ntC" firstAttribute="leading" secondItem="PMT-5a-4fh" secondAttribute="trailing" constant="10" id="zCo-35-VBF"/>
+                    <constraint firstItem="Vkb-k0-tdo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="zD1-Qd-Yki"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="720.5" y="-114"/>
+        </tableViewCell>
+    </objects>
+</document>

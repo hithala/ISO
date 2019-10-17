@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Xcode 4.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="STBroadMajor" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="college" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCollege" inverseName="broadMajors" inverseEntity="STCollege" syncable="YES"/>
+        <relationship name="filter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STFilter" inverseName="majors" inverseEntity="STFilter" syncable="YES"/>
+        <relationship name="specificMajors" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STSpecificMajor" inverseName="broadMajor" inverseEntity="STSpecificMajor" syncable="YES"/>
+    </entity>
+    <entity name="STCAdmissionCodes" representedClassName="STCAdmissionCodes" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="admissions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCAdmissions" inverseName="admissionCodes" inverseEntity="STCAdmissions" syncable="YES"/>
+    </entity>
+    <entity name="STCAdmissionItem" representedClassName="STCAdmissionItem" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="admission" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCAdmissions" inverseName="admissionItems" inverseEntity="STCAdmissions" syncable="YES"/>
+        <relationship name="intendedStudy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCIntendedStudy" inverseName="admissionItems" inverseEntity="STCIntendedStudy" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCItem" inverseName="admissionItem" inverseEntity="STCItem" syncable="YES"/>
+        <relationship name="sports" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCSports" inverseName="admissionItems" inverseEntity="STCSports" syncable="YES"/>
+    </entity>
+    <entity name="STCAdmissions" representedClassName="STCAdmissions" parentEntity="STCollegeSections" syncable="YES">
+        <relationship name="admissionCodes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCAdmissionCodes" inverseName="admissions" inverseEntity="STCAdmissionCodes" syncable="YES"/>
+        <relationship name="admissionItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCAdmissionItem" inverseName="admission" inverseEntity="STCAdmissionItem" syncable="YES"/>
+    </entity>
+    <entity name="STCAluminiItem" representedClassName="STCAluminiItem" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="alumini" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCProminentAlumini" inverseName="aluminiItems" inverseEntity="STCProminentAlumini" syncable="YES"/>
+    </entity>
+    <entity name="STCAverageScoreItem" representedClassName="STCAverageScoreItem" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="testScoresAndGrades" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCTestScoresAndGrades" inverseName="averageScores" inverseEntity="STCTestScoresAndGrades" syncable="YES"/>
+    </entity>
+    <entity name="STCAverageWeather" representedClassName="STCAverageWeather" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="averageWeatherItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCAverageWeatherItem" inverseName="averageWeather" inverseEntity="STCAverageWeatherItem" syncable="YES"/>
+        <relationship name="weather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCWeather" inverseName="averageWeather" inverseEntity="STCWeather" syncable="YES"/>
+    </entity>
+    <entity name="STCAverageWeatherItem" representedClassName="STCAverageWeatherItem" syncable="YES">
+        <attribute name="highValue" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lowValue" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="precipitationValue" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="averageWeather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCAverageWeather" inverseName="averageWeatherItems" inverseEntity="STCAverageWeather" syncable="YES"/>
+    </entity>
+    <entity name="STCBarChartItem" representedClassName="STCBarChartItem" syncable="YES">
+        <attribute name="lowerValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="newLowerValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="newUpperValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="upperValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="testScoreBarChart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCTestScoresBarChart" inverseName="barChartItems" inverseEntity="STCTestScoresBarChart" syncable="YES"/>
+    </entity>
+    <entity name="STCCalender" representedClassName="STCCalender" parentEntity="STCollegeSections" syncable="YES">
+        <relationship name="mostImportantDates" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCMostImportantCalenderDates" inverseName="calender" inverseEntity="STCMostImportantCalenderDates" syncable="YES"/>
+        <relationship name="otherImportantDates" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCOtherCalenderDates" inverseName="calender" inverseEntity="STCOtherCalenderDates" syncable="YES"/>
+    </entity>
+    <entity name="STCFeesAndFinancialAid" representedClassName="STCFeesAndFinancialAid" parentEntity="STCollegeSections" syncable="YES">
+        <attribute name="averageDebtUponGraduation" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="averageFinancialAid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="averageMeritAward" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="averageNeedMet" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="averageNetPrice" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="feesSelectedIndex" optional="YES" attributeType="Integer 16" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hasSeeMore" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="netPriceCalculatorURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receivingFinancialAid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="receivingMeritAwards" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="householdIncome" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCHouseholdIncome" inverseName="feesAndFinancialAid" inverseEntity="STCHouseholdIncome" syncable="YES"/>
+        <relationship name="inStateFees" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCInStateFees" inverseName="feesAndFinancialAid" inverseEntity="STCInStateFees" syncable="YES"/>
+        <relationship name="outStateFees" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCOutStateFees" inverseName="feesAndFinancialAid" inverseEntity="STCOutStateFees" syncable="YES"/>
+    </entity>
+    <entity name="STCFreshman" representedClassName="STCFreshman" parentEntity="STCollegeSections" syncable="YES">
+        <attribute name="religiousAffiliation" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="freshmanDetailItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCFreshmanDetailItem" inverseName="freshman" inverseEntity="STCFreshmanDetailItem" syncable="YES"/>
+        <relationship name="freshmanGreekLife" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCFreshmanGreekLife" inverseName="freshman" inverseEntity="STCFreshmanGreekLife" syncable="YES"/>
+        <relationship name="freshmanMostRepresentedStates" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCFreshmanRepresentedStates" inverseName="freshman" inverseEntity="STCFreshmanRepresentedStates" syncable="YES"/>
+        <relationship name="genderDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCFreshmanGenderDetails" inverseName="freshman" inverseEntity="STCFreshmanGenderDetails" syncable="YES"/>
+        <relationship name="graduationDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCFreshmanGraduationDetails" inverseName="freshman" inverseEntity="STCFreshmanGraduationDetails" syncable="YES"/>
+        <relationship name="pieCharts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCPieChart" inverseName="freshman" inverseEntity="STCPieChart" syncable="YES"/>
+    </entity>
+    <entity name="STCFreshmanDetailItem" representedClassName="STCFreshmanDetailItem" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="freshman" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCFreshman" inverseName="freshmanDetailItems" inverseEntity="STCFreshman" syncable="YES"/>
+    </entity>
+    <entity name="STCFreshmanGenderDetails" representedClassName="STCFreshmanGenderDetails" syncable="YES">
+        <attribute name="femalePercentage" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="malePercentage" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="freshman" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCFreshman" inverseName="genderDetails" inverseEntity="STCFreshman" syncable="YES"/>
+    </entity>
+    <entity name="STCFreshmanGraduationDetails" syncable="YES">
+        <attribute name="fourYearGraduationRate" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="retentionRate" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sixYearGraduationRate" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="freshman" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCFreshman" inverseName="graduationDetails" inverseEntity="STCFreshman" syncable="YES"/>
+    </entity>
+    <entity name="STCFreshmanGreekLife" representedClassName="STCFreshmanGreekLife" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="freshman" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCFreshman" inverseName="freshmanGreekLife" inverseEntity="STCFreshman" syncable="YES"/>
+    </entity>
+    <entity name="STCFreshmanRepresentedStates" representedClassName="STCFreshmanRepresentedStates" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="freshman" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCFreshman" inverseName="freshmanMostRepresentedStates" inverseEntity="STCFreshman" syncable="YES"/>
+    </entity>
+    <entity name="STCHouseholdIncome" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="feesAndFinancialAid" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCFeesAndFinancialAid" inverseName="householdIncome" inverseEntity="STCFeesAndFinancialAid" syncable="YES"/>
+    </entity>
+    <entity name="STCInStateFees" representedClassName="STCInStateFees" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="feesAndFinancialAid" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCFeesAndFinancialAid" inverseName="inStateFees" inverseEntity="STCFeesAndFinancialAid" syncable="YES"/>
+    </entity>
+    <entity name="STCIntendedStudy" representedClassName="STCIntendedStudy" parentEntity="STCollegeSections" syncable="YES">
+        <attribute name="hasSeeMore" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="studentFacultyRatio" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="admissionItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCAdmissionItem" inverseName="intendedStudy" inverseEntity="STCAdmissionItem" syncable="YES"/>
+        <relationship name="intendedStudyPieChart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCPieChart" inverseName="intendedStudy" inverseEntity="STCPieChart" syncable="YES"/>
+    </entity>
+    <entity name="STCItem" representedClassName="STCItem" syncable="YES">
+        <attribute name="badgeText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="badgeType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="admissionItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCAdmissionItem" inverseName="items" inverseEntity="STCAdmissionItem" syncable="YES"/>
+    </entity>
+    <entity name="STCLinksAndAddresses" representedClassName="STCLinksAndAddresses" parentEntity="STCollegeSections" syncable="YES">
+        <relationship name="linksAndAddressesItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCLinksAndAddressesItem" inverseName="linksAdnAddresses" inverseEntity="STCLinksAndAddressesItem" syncable="YES"/>
+    </entity>
+    <entity name="STCLinksAndAddressesItem" representedClassName="STCLinksAndAddressesItem" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="linksAdnAddresses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCLinksAndAddresses" inverseName="linksAndAddressesItems" inverseEntity="STCLinksAndAddresses" syncable="YES"/>
+    </entity>
+    <entity name="STClippingSectionItem" representedClassName="STClippingSectionItem" syncable="YES">
+        <attribute name="collegeID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isExpanded" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sectionID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sectionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="clipping" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STClippingsItem" inverseName="clippingSections" inverseEntity="STClippingsItem" syncable="YES"/>
+    </entity>
+    <entity name="STClippingsItem" representedClassName="STClippingsItem" syncable="YES">
+        <attribute name="collegeID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="collegeName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="clippingSections" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STClippingSectionItem" inverseName="clipping" inverseEntity="STClippingSectionItem" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STUser" inverseName="clippings" inverseEntity="STUser" syncable="YES"/>
+    </entity>
+    <entity name="STCLocation" representedClassName="STCLocation" parentEntity="STCollegeSections" syncable="YES">
+        <attribute name="lattitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="moreAboutCollegeURL" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="STCMenSports" representedClassName="STCMenSports" syncable="YES">
+        <relationship name="sports" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCSports" inverseName="menSports" inverseEntity="STCSports" syncable="YES"/>
+        <relationship name="sportsDivisions" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCSportsDivision" inverseName="mensSports" inverseEntity="STCSportsDivision" syncable="YES"/>
+    </entity>
+    <entity name="STCMostImportantCalenderDates" representedClassName="STCMostImportantCalenderDates" syncable="YES">
+        <attribute name="eventDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="eventdateDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventDateString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="calender" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCCalender" inverseName="mostImportantDates" inverseEntity="STCCalender" syncable="YES"/>
+    </entity>
+    <entity name="STCollege" representedClassName="STCollege" syncable="YES">
+        <attribute name="acceptanceRate" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appleLattitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appleLongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="averageACT" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="averageGPA" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="averageSAT" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="averageSATNew" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classSize" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="collegeAccessType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="collegeAreaType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="collegeID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="collegeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="collegeType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="commonApplicationAccepted" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="earlyAction" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="earlyDecision" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fourYrGraduationRate" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="googleLattitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="googleLongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isAddedToCompare" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lastUpdatedDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="logoPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="oneYrRetentionRate" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="place" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receivingFinancialAid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="religiousAffiliation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rollingAdmissions" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="shouldUpdate" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sixYrGraduationRate" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streetName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telephoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="testOptional" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="totalFees" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="totalFreshmens" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="totalUndergrads" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="websiteUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipCode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="broadMajors" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STBroadMajor" inverseName="college" inverseEntity="STBroadMajor" syncable="YES"/>
+        <relationship name="collegeSections" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCollegeSections" inverseName="college" inverseEntity="STCollegeSections" syncable="YES"/>
+    </entity>
+    <entity name="STCollegeSections" representedClassName="STCollegeSections" syncable="YES">
+        <attribute name="collegeID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isExpanded" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sectionID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sectionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="college" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCollege" inverseName="collegeSections" inverseEntity="STCollege" syncable="YES"/>
+    </entity>
+    <entity name="STCompareItem" representedClassName="STCompareItem" syncable="YES">
+        <attribute name="collegeID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STUser" inverseName="compareItems" inverseEntity="STUser" syncable="YES"/>
+    </entity>
+    <entity name="STCOtherCalenderDates" representedClassName="STCOtherCalenderDates" syncable="YES">
+        <attribute name="eventDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="eventdateDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventDateString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="calender" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCCalender" inverseName="otherImportantDates" inverseEntity="STCCalender" syncable="YES"/>
+    </entity>
+    <entity name="STCOutStateFees" representedClassName="STCOutStateFees" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="feesAndFinancialAid" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCFeesAndFinancialAid" inverseName="outStateFees" inverseEntity="STCFeesAndFinancialAid" syncable="YES"/>
+    </entity>
+    <entity name="STCPieChart" representedClassName="STCPieChart" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="freshman" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCFreshman" inverseName="pieCharts" inverseEntity="STCFreshman" syncable="YES"/>
+        <relationship name="intendedStudy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCIntendedStudy" inverseName="intendedStudyPieChart" inverseEntity="STCIntendedStudy" syncable="YES"/>
+        <relationship name="pieChartItem" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCPieChartItem" inverseName="pieChart" inverseEntity="STCPieChartItem" syncable="YES"/>
+        <relationship name="testScoresAndGrades" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCTestScoresAndGrades" inverseName="testScoresPieCharts" inverseEntity="STCTestScoresAndGrades" syncable="YES"/>
+    </entity>
+    <entity name="STCPieChartItem" representedClassName="STCPieChartItem" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="pieChart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCPieChart" inverseName="pieChartItem" inverseEntity="STCPieChart" syncable="YES"/>
+    </entity>
+    <entity name="STCProminentAlumini" representedClassName="STCProminentAlumini" parentEntity="STCollegeSections" syncable="YES">
+        <attribute name="hasSeeMore" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="aluminiItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCAluminiItem" inverseName="alumini" inverseEntity="STCAluminiItem" syncable="YES"/>
+    </entity>
+    <entity name="STCQuickFacts" representedClassName="STCQuickFacts" parentEntity="STCollegeSections" syncable="YES">
+        <attribute name="quickFactsText" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="STCRankingItem" representedClassName="STCRankingItem" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rank" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rankingURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="collegeRanking" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCRankings" inverseName="rankingItems" inverseEntity="STCRankings" syncable="YES"/>
+    </entity>
+    <entity name="STCRankings" representedClassName="STCRankings" parentEntity="STCollegeSections" syncable="YES">
+        <relationship name="rankingItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCRankingItem" inverseName="collegeRanking" inverseEntity="STCRankingItem" syncable="YES"/>
+    </entity>
+    <entity name="STCSATPieChart" representedClassName="STCSATPieChart" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pieChartItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCSATPieChartItem" inverseName="satPieChart" inverseEntity="STCSATPieChartItem" syncable="YES"/>
+        <relationship name="satPieChartLayout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCSATPieChartLayout" inverseName="items" inverseEntity="STCSATPieChartLayout" syncable="YES"/>
+    </entity>
+    <entity name="STCSATPieChartItem" representedClassName="STCSATPieChartItem" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="satPieChart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCSATPieChart" inverseName="pieChartItems" inverseEntity="STCSATPieChart" syncable="YES"/>
+    </entity>
+    <entity name="STCSATPieChartLayout" representedClassName="STCSATPieChartLayout" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCSATPieChart" inverseName="satPieChartLayout" inverseEntity="STCSATPieChart" syncable="YES"/>
+        <relationship name="testScoresAndGrades" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCTestScoresAndGrades" inverseName="testScoreSATPieChart" inverseEntity="STCTestScoresAndGrades" syncable="YES"/>
+    </entity>
+    <entity name="STCSimilarSchoolItem" representedClassName="STCSimilarSchoolItem" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="schoolID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="similarSchoolURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="similarSchools" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCSimilarSchools" inverseName="simlarSchoolItems" inverseEntity="STCSimilarSchools" syncable="YES"/>
+    </entity>
+    <entity name="STCSimilarSchools" representedClassName="STCSimilarSchools" parentEntity="STCollegeSections" syncable="YES">
+        <attribute name="hasSeeMore" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="simlarSchoolItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCSimilarSchoolItem" inverseName="similarSchools" inverseEntity="STCSimilarSchoolItem" syncable="YES"/>
+    </entity>
+    <entity name="STCSports" representedClassName="STCSports" parentEntity="STCollegeSections" syncable="YES">
+        <attribute name="mascotName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sportsSelectedIndex" optional="YES" attributeType="Integer 16" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="admissionItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCAdmissionItem" inverseName="sports" inverseEntity="STCAdmissionItem" syncable="YES"/>
+        <relationship name="menSports" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCMenSports" inverseName="sports" inverseEntity="STCMenSports" syncable="YES"/>
+        <relationship name="womenSports" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCWomenSports" inverseName="sports" inverseEntity="STCWomenSports" syncable="YES"/>
+    </entity>
+    <entity name="STCSportsDivision" representedClassName="STCSportsDivision" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="mensSports" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCMenSports" inverseName="sportsDivisions" inverseEntity="STCMenSports" syncable="YES"/>
+        <relationship name="sportsItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCSportsItem" inverseName="sportsDivision" inverseEntity="STCSportsItem" syncable="YES"/>
+        <relationship name="womenSports" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCWomenSports" inverseName="sportsDivisions" inverseEntity="STCWomenSports" syncable="YES"/>
+    </entity>
+    <entity name="STCSportsItem" representedClassName="STCSportsItem" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sportsDivision" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCSportsDivision" inverseName="sportsItems" inverseEntity="STCSportsDivision" syncable="YES"/>
+    </entity>
+    <entity name="STCTestScoresAndGrades" representedClassName="STCTestScoresAndGrades" parentEntity="STCollegeSections" syncable="YES">
+        <attribute name="barChartSelectedIndex" optional="YES" attributeType="Integer 16" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="pieChartSelectedIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="averageScores" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCAverageScoreItem" inverseName="testScoresAndGrades" inverseEntity="STCAverageScoreItem" syncable="YES"/>
+        <relationship name="testScoreHSCRBarCharts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCTestScoresHSCRBarChart" inverseName="testScoresAndGrades" inverseEntity="STCTestScoresHSCRBarChart" syncable="YES"/>
+        <relationship name="testScoreSATPieChart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCSATPieChartLayout" inverseName="testScoresAndGrades" inverseEntity="STCSATPieChartLayout" syncable="YES"/>
+        <relationship name="testScoresBarCharts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCTestScoresBarChart" inverseName="testScoresAndGrades" inverseEntity="STCTestScoresBarChart" syncable="YES"/>
+        <relationship name="testScoresPieCharts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCPieChart" inverseName="testScoresAndGrades" inverseEntity="STCPieChart" syncable="YES"/>
+    </entity>
+    <entity name="STCTestScoresBarChart" representedClassName="STCTestScoresBarChart" syncable="YES">
+        <attribute name="newScoresAvailable" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="percentageHighValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="percentageLowValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="percentageNewHighValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="percentageNewLowValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="barChartItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCBarChartItem" inverseName="testScoreBarChart" inverseEntity="STCBarChartItem" syncable="YES"/>
+        <relationship name="testScoresAndGrades" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCTestScoresAndGrades" inverseName="testScoresBarCharts" inverseEntity="STCTestScoresAndGrades" syncable="YES"/>
+    </entity>
+    <entity name="STCTestScoresHSCRBarChart" representedClassName="STCTestScoresHSCRBarChart" syncable="YES">
+        <attribute name="bottomHalfPercentageValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="bottomQuarterPercentageValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="topHalfPercentageValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="topQuarterPercentageValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="topTenthPercentageValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="totalPercentageValue" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="testScoresAndGrades" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCTestScoresAndGrades" inverseName="testScoreHSCRBarCharts" inverseEntity="STCTestScoresAndGrades" syncable="YES"/>
+    </entity>
+    <entity name="STCWeather" representedClassName="STCWeather" parentEntity="STCollegeSections" syncable="YES">
+        <relationship name="averageWeather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCAverageWeather" inverseName="weather" inverseEntity="STCAverageWeather" syncable="YES"/>
+    </entity>
+    <entity name="STCWomenSports" representedClassName="STCWomenSports" syncable="YES">
+        <relationship name="sports" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STCSports" inverseName="womenSports" inverseEntity="STCSports" syncable="YES"/>
+        <relationship name="sportsDivisions" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCSportsDivision" inverseName="womenSports" inverseEntity="STCSportsDivision" syncable="YES"/>
+    </entity>
+    <entity name="STDefaultCollege" representedClassName="STDefaultCollege" syncable="YES">
+        <attribute name="collegeID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="seenDate" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STUser" inverseName="defaultCollege" inverseEntity="STUser" syncable="YES"/>
+    </entity>
+    <entity name="STFavorites" representedClassName="STFavorites" syncable="YES">
+        <attribute name="collegeID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STUser" inverseName="favorites" inverseEntity="STUser" syncable="YES"/>
+    </entity>
+    <entity name="STFilter" representedClassName="STFilter" syncable="YES">
+        <attribute name="favoriteOnly" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="religiousAffiliation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortOrder" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="stateCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stateName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="testOptional" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="admissionType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STFilterAdmissionType" inverseName="filter" inverseEntity="STFilterAdmissionType" syncable="YES"/>
+        <relationship name="collegeType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STFilterCollegeType" inverseName="filter" inverseEntity="STFilterCollegeType" syncable="YES"/>
+        <relationship name="filterRangeItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="STFilterRangeItem" inverseName="filter" inverseEntity="STFilterRangeItem" syncable="YES"/>
+        <relationship name="majors" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STBroadMajor" inverseName="filter" inverseEntity="STBroadMajor" syncable="YES"/>
+    </entity>
+    <entity name="STFilterAdmissionType" syncable="YES">
+        <attribute name="isCommonApp" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isEarlyAction" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isEarlyDecision" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="filter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STFilter" inverseName="admissionType" inverseEntity="STFilter" syncable="YES"/>
+    </entity>
+    <entity name="STFilterCollegeType" representedClassName="STFilterCollegeType" syncable="YES">
+        <attribute name="isCity" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isCollege" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isPrivate" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isPublic" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isRural" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isTown" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isUniversity" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="filter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STFilter" inverseName="collegeType" inverseEntity="STFilter" syncable="YES"/>
+    </entity>
+    <entity name="STFilterRangeItem" representedClassName="STFilterRangeItem" syncable="YES">
+        <attribute name="curLowerValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="curUpperValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lowerValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rangeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="upperValue" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="filter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STFilter" inverseName="filterRangeItems" inverseEntity="STFilter" syncable="YES"/>
+    </entity>
+    <entity name="STLocationSearchItem" representedClassName="STLocationSearchItem" syncable="YES">
+        <attribute name="collegeID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="collegeLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STUser" inverseName="locationSearch" inverseEntity="STUser" syncable="YES"/>
+    </entity>
+    <entity name="STRecentSearchItem" representedClassName="STRecentSearchItem" syncable="YES">
+        <attribute name="collegeID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STUser" inverseName="recentSearch" inverseEntity="STUser" syncable="YES"/>
+    </entity>
+    <entity name="STSectionItem" representedClassName="STSectionItem" syncable="YES">
+        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sectionID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sectionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sections" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STSections" inverseName="sectionItem" inverseEntity="STSections" syncable="YES"/>
+    </entity>
+    <entity name="STSections" representedClassName="STSections" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="sectionItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STSectionItem" inverseName="sections" inverseEntity="STSectionItem" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STUser" inverseName="sections" inverseEntity="STUser" syncable="YES"/>
+    </entity>
+    <entity name="STSpecificMajor" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="broadMajor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STBroadMajor" inverseName="specificMajors" inverseEntity="STBroadMajor" syncable="YES"/>
+    </entity>
+    <entity name="STUser" representedClassName="STUser" syncable="YES">
+        <attribute name="defaultMapAppType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="emailID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genderType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageurl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isAdmin" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isCompareItemPurchased" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isCompareTutorialSwiped" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isDisclaimerAccepted" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isFilterItemPurchased" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isTutorialViewSwiped" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastSeenCollege" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="pushNotificationState" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sortOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="clippings" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STClippingsItem" inverseName="user" inverseEntity="STClippingsItem" syncable="YES"/>
+        <relationship name="compareItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STCompareItem" inverseName="user" inverseEntity="STCompareItem" syncable="YES"/>
+        <relationship name="defaultCollege" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STDefaultCollege" inverseName="user" inverseEntity="STDefaultCollege" syncable="YES"/>
+        <relationship name="favorites" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STFavorites" inverseName="user" inverseEntity="STFavorites" syncable="YES"/>
+        <relationship name="locationSearch" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STLocationSearchItem" inverseName="user" inverseEntity="STLocationSearchItem" syncable="YES"/>
+        <relationship name="recentSearch" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STRecentSearchItem" inverseName="user" inverseEntity="STRecentSearchItem" syncable="YES"/>
+        <relationship name="sections" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="STSections" inverseName="user" inverseEntity="STSections" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="STBroadMajor" positionX="-695" positionY="-820" width="128" height="133"/>
+        <element name="STCAdmissionCodes" positionX="1105" positionY="-64" width="128" height="90"/>
+        <element name="STCAdmissionItem" positionX="891" positionY="-142" width="128" height="118"/>
+        <element name="STCAdmissions" positionX="882" positionY="-369" width="128" height="73"/>
+        <element name="STCAluminiItem" positionX="-270" positionY="-162" width="128" height="88"/>
+        <element name="STCAverageScoreItem" positionX="1611" positionY="-270" width="135" height="88"/>
+        <element name="STCAverageWeather" positionX="2815" positionY="-214" width="128" height="88"/>
+        <element name="STCAverageWeatherItem" positionX="2761" positionY="-54" width="155" height="135"/>
+        <element name="STCBarChartItem" positionX="1629" positionY="54" width="128" height="135"/>
+        <element name="STCCalender" positionX="358" positionY="-360" width="128" height="73"/>
+        <element name="STCFeesAndFinancialAid" positionX="2518" positionY="-397" width="146" height="240"/>
+        <element name="STCFreshman" positionX="1114" positionY="-360" width="128" height="148"/>
+        <element name="STCFreshmanDetailItem" positionX="1098" positionY="-196" width="146" height="88"/>
+        <element name="STCFreshmanGenderDetails" positionX="1305" positionY="-241" width="182" height="88"/>
+        <element name="STCFreshmanGraduationDetails" positionX="1314" positionY="-333" width="207" height="103"/>
+        <element name="STCFreshmanGreekLife" positionX="1359" positionY="47" width="128" height="88"/>
+        <element name="STCFreshmanRepresentedStates" positionX="1429" positionY="-109" width="155" height="73"/>
+        <element name="STCHouseholdIncome" positionX="2635" positionY="83" width="128" height="88"/>
+        <element name="STCInStateFees" positionX="2500" positionY="-79" width="128" height="88"/>
+        <element name="STCIntendedStudy" positionX="639" positionY="-369" width="135" height="103"/>
+        <element name="STCItem" positionX="871" positionY="23" width="128" height="103"/>
+        <element name="STCLinksAndAddresses" positionX="106" positionY="-355" width="137" height="58"/>
+        <element name="STCLinksAndAddressesItem" positionX="63" positionY="-162" width="162" height="88"/>
+        <element name="STClippingSectionItem" positionX="-1449" positionY="-531" width="135" height="133"/>
+        <element name="STClippingsItem" positionX="-1656" positionY="-468" width="128" height="105"/>
+        <element name="STCLocation" positionX="-774" positionY="-360" width="128" height="88"/>
+        <element name="STCMenSports" positionX="2203" positionY="-216" width="128" height="73"/>
+        <element name="STCMostImportantCalenderDates" positionX="450" positionY="-216" width="162" height="118"/>
+        <element name="STCollege" positionX="133" positionY="-1458" width="128" height="733"/>
+        <element name="STCollegeSections" positionX="331" positionY="-613" width="128" height="118"/>
+        <element name="STCompareItem" positionX="-2135" positionY="-223" width="128" height="88"/>
+        <element name="STCOtherCalenderDates" positionX="270" positionY="-214" width="153" height="118"/>
+        <element name="STCOutStateFees" positionX="2572" positionY="-198" width="128" height="88"/>
+        <element name="STCPieChart" positionX="648" positionY="-243" width="128" height="118"/>
+        <element name="STCPieChartItem" positionX="630" positionY="-52" width="128" height="88"/>
+        <element name="STCProminentAlumini" positionX="-261" positionY="-360" width="135" height="73"/>
+        <element name="STCQuickFacts" positionX="-414" positionY="-360" width="128" height="58"/>
+        <element name="STCRankingItem" positionX="-101" positionY="-103" width="128" height="105"/>
+        <element name="STCRankings" positionX="-92" positionY="-324" width="128" height="58"/>
+        <element name="STCSATPieChart" positionX="1998" positionY="-82" width="128" height="88"/>
+        <element name="STCSATPieChartItem" positionX="1978" positionY="81" width="128" height="88"/>
+        <element name="STCSATPieChartLayout" positionX="2032" positionY="-259" width="155" height="88"/>
+        <element name="STCSimilarSchoolItem" positionX="-612" positionY="-162" width="146" height="103"/>
+        <element name="STCSimilarSchools" positionX="-594" positionY="-360" width="128" height="73"/>
+        <element name="STCSports" positionX="2221" positionY="-396" width="128" height="118"/>
+        <element name="STCSportsDivision" positionX="2167" positionY="-76" width="128" height="103"/>
+        <element name="STCSportsItem" positionX="2140" positionY="114" width="128" height="75"/>
+        <element name="STCTestScoresAndGrades" positionX="1807" positionY="-360" width="155" height="148"/>
+        <element name="STCTestScoresBarChart" positionX="1692" positionY="-153" width="144" height="163"/>
+        <element name="STCTestScoresHSCRBarChart" positionX="1852" positionY="-144" width="128" height="148"/>
+        <element name="STCWeather" positionX="2844" positionY="-414" width="128" height="60"/>
+        <element name="STCWomenSports" positionX="2383" positionY="-208" width="128" height="73"/>
+        <element name="STDefaultCollege" positionX="-1656" positionY="-207" width="128" height="88"/>
+        <element name="STFavorites" positionX="-1647" positionY="-313" width="128" height="90"/>
+        <element name="STFilter" positionX="-1028" positionY="-855" width="128" height="193"/>
+        <element name="STFilterAdmissionType" positionX="-1226" positionY="-819" width="128" height="103"/>
+        <element name="STFilterCollegeType" positionX="-1215" positionY="-459" width="128" height="163"/>
+        <element name="STFilterRangeItem" positionX="-1224" positionY="-639" width="128" height="133"/>
+        <element name="STLocationSearchItem" positionX="-1748" positionY="-91" width="128" height="105"/>
+        <element name="STRecentSearchItem" positionX="-1946" positionY="-118" width="128" height="73"/>
+        <element name="STSectionItem" positionX="-2324" positionY="-445" width="128" height="103"/>
+        <element name="STSections" positionX="-2115" positionY="-549" width="128" height="88"/>
+        <element name="STSpecificMajor" positionX="-783" positionY="-562" width="128" height="103"/>
+        <element name="STUser" positionX="-1908" positionY="-585" width="128" height="403"/>
+    </elements>
+</model>

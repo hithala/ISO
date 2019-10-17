@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STFinancialAidView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kjt-zN-YUX" userLabel="Seperator View">
+                    <rect key="frame" x="0.0" y="99" width="200" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Q8j-jv-Ead"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23u-BN-Zb8" userLabel="LeftView">
+                    <rect key="frame" x="15" y="25" width="170" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$40000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFF-s6-6ok">
+                            <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="6Ze-4V-E2v"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                            <color key="textColor" red="0.1919802725315094" green="0.19197453558444977" blue="0.19197782874107361" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Finance Aid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GSM-n5-jqV">
+                            <rect key="frame" x="0.0" y="30" width="170" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="uvo-EK-dzh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="13"/>
+                            <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="GSM-n5-jqV" firstAttribute="leading" secondItem="23u-BN-Zb8" secondAttribute="leading" id="H1Y-ew-OhT"/>
+                        <constraint firstAttribute="trailing" secondItem="GSM-n5-jqV" secondAttribute="trailing" id="hPY-U6-0yE"/>
+                        <constraint firstItem="yFF-s6-6ok" firstAttribute="top" secondItem="23u-BN-Zb8" secondAttribute="top" id="prh-rq-9Ol"/>
+                        <constraint firstItem="yFF-s6-6ok" firstAttribute="leading" secondItem="23u-BN-Zb8" secondAttribute="leading" id="vdX-ar-4fw"/>
+                        <constraint firstAttribute="trailing" secondItem="yFF-s6-6ok" secondAttribute="trailing" id="zGn-uv-psa"/>
+                        <constraint firstAttribute="height" constant="50" id="zHC-6b-13q"/>
+                        <constraint firstAttribute="bottom" secondItem="GSM-n5-jqV" secondAttribute="bottom" id="zRP-gV-9pL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="23u-BN-Zb8" secondAttribute="trailing" constant="15" id="TCX-xy-bbT"/>
+                <constraint firstItem="23u-BN-Zb8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="URe-Ca-hJG"/>
+                <constraint firstAttribute="bottom" secondItem="Kjt-zN-YUX" secondAttribute="bottom" id="XQo-Sc-Mvj"/>
+                <constraint firstAttribute="trailing" secondItem="Kjt-zN-YUX" secondAttribute="trailing" id="o5L-yL-sRW"/>
+                <constraint firstAttribute="centerY" secondItem="23u-BN-Zb8" secondAttribute="centerY" id="p2k-rM-am6"/>
+                <constraint firstItem="Kjt-zN-YUX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zTV-I5-xvL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cellSeparatorHeightConstraint" destination="Q8j-jv-Ead" id="DS4-Hg-yhs"/>
+                <outlet property="fieldLabel" destination="GSM-n5-jqV" id="pgv-Cm-Nya"/>
+                <outlet property="fieldValue" destination="yFF-s6-6ok" id="ALt-fL-XXk"/>
+            </connections>
+            <point key="canvasLocation" x="310" y="207"/>
+        </view>
+    </objects>
+</document>

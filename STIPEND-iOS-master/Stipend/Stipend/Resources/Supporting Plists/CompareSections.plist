@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompareSections</key>
+	<array>
+		<dict>
+			<key>sectionID</key>
+			<integer>0</integer>
+			<key>imageName</key>
+			<string>tile_summary</string>
+			<key>selectedImageName</key>
+			<string>compare-summary</string>
+			<key>sectionName</key>
+			<string>College Summary</string>
+			<key>sectionKey</key>
+			<string></string>
+			<key>attributeArray</key>
+			<array>
+				<dict>
+					<key>attributeName</key>
+					<string>Freshmen</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Undergraduates</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Acceptance Rate</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Average GPA</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Average SAT</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Average ACT</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Undergrads Off Campus</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Graduation Rate 4Yr / 6Yr</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Religious Affiliation</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Location</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>sectionID</key>
+			<integer>3</integer>
+			<key>imageName</key>
+			<string>tile_scores</string>
+			<key>selectedImageName</key>
+			<string>compare-scores</string>
+			<key>sectionName</key>
+			<string>Test Scores &amp; Grades</string>
+			<key>sectionKey</key>
+			<string>TestScoresAndGrades</string>
+			<key>attributeArray</key>
+			<array>
+				<dict>
+					<key>attributeName</key>
+					<string>Average GPA</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Average ACT Composite</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>ACT Composite 25th %</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>ACT Composite 75th %</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Avg SAT Combined</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>SAT Reading and Writing 25th %</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>SAT Reading and Writing 75th %</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>SAT Math 25th %</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>SAT Math 75th %</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>sectionID</key>
+			<integer>4</integer>
+			<key>imageName</key>
+			<string>tile_freshman</string>
+			<key>selectedImageName</key>
+			<string>compare-freshman</string>
+			<key>sectionName</key>
+			<string>Student Profile</string>
+			<key>sectionKey</key>
+			<string>FreshManProfile</string>
+			<key>attributeArray</key>
+			<array>
+				<dict>
+					<key>attributeName</key>
+					<string>Acceptance Rate</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Freshmen</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Applicants</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Full-time Undergrads</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>% Men</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>% Women</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>% Out of State</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>% Undergrads Off Campus</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Graduation Rate 4Yr / 6Yr</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>sectionID</key>
+			<integer>5</integer>
+			<key>imageName</key>
+			<string>tile_admissions</string>
+			<key>selectedImageName</key>
+			<string>compare-admissions</string>
+			<key>sectionName</key>
+			<string>Admissions</string>
+			<key>sectionKey</key>
+			<string>Admissions</string>
+			<key>attributeArray</key>
+			<array>
+				<dict>
+					<key>attributeName</key>
+					<string>Early Decision</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Early Action</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Rolling</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Common Application</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>sectionID</key>
+			<integer>8</integer>
+			<key>imageName</key>
+			<string>tile_fees</string>
+			<key>selectedImageName</key>
+			<string>compare-fees</string>
+			<key>sectionName</key>
+			<string>Fees And Financial Aid (In State)</string>
+			<key>sectionKey</key>
+			<string>FeesAndFinancialAids</string>
+			<key>attributeArray</key>
+			<array>
+				<dict>
+					<key>attributeName</key>
+					<string>Application Fee</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Tuition</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Room &amp; Board</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Books &amp; Supplies</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Personal Expenses</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Total Fees</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Average Financial Aid</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>% Receiving Financial Aid</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>sectionID</key>
+			<integer>8</integer>
+			<key>imageName</key>
+			<string>tile_fees</string>
+			<key>selectedImageName</key>
+			<string>compare-fees</string>
+			<key>sectionName</key>
+			<string>Fees And Financial Aid (Out State)</string>
+			<key>sectionKey</key>
+			<string>FeesAndFinancialAids</string>
+			<key>attributeArray</key>
+			<array>
+				<dict>
+					<key>attributeName</key>
+					<string>Application Fee</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Tuition</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Room &amp; Board</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Books &amp; Supplies</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Personal Expenses</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Total Fees</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Average Financial Aid</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>% Receiving Financial Aid</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>sectionID</key>
+			<integer>10</integer>
+			<key>imageName</key>
+			<string>tile_weather</string>
+			<key>selectedImageName</key>
+			<string>compare-weather</string>
+			<key>sectionName</key>
+			<string>Weather</string>
+			<key>sectionKey</key>
+			<string>Weather</string>
+			<key>attributeArray</key>
+			<array>
+				<dict>
+					<key>attributeName</key>
+					<string>Fall Avg Low</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Fall Avg High</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Fall Avg Precipitation</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Winter Avg Low</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Winter Avg High</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Winter Avg Precipitation</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Spring Avg Low</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Spring Avg High</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Spring Avg Precipitation</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Summer Avg Low</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Summer Avg High</string>
+				</dict>
+				<dict>
+					<key>attributeName</key>
+					<string>Summer Avg Precipitation</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="STCollegeRankingsViewCell" id="KGk-i7-Jjw" customClass="STCollegeRankingsViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U.S. News &amp; World Reports" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daG-f0-yXj">
+                        <rect key="frame" x="15" y="16" width="235" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="WkL-3Y-xnG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                        <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLC-44-PUD" userLabel="RankLabel">
+                        <rect key="frame" x="270" y="16" width="40" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="PZm-nX-Khm"/>
+                            <constraint firstAttribute="height" constant="22" id="YR8-Kr-fyp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lv-1g-mNy" userLabel="SeparatorLine">
+                        <rect key="frame" x="15" y="53" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8Lm-lM-ygn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3lv-1g-mNy" secondAttribute="trailing" id="Pzn-rm-BTr"/>
+                    <constraint firstItem="3lv-1g-mNy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ag2-rV-qno"/>
+                    <constraint firstAttribute="centerY" secondItem="daG-f0-yXj" secondAttribute="centerY" id="eNf-pi-hJr"/>
+                    <constraint firstAttribute="trailing" secondItem="TLC-44-PUD" secondAttribute="trailing" constant="10" id="ebq-SK-HjP"/>
+                    <constraint firstItem="daG-f0-yXj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="rqF-rG-S0A"/>
+                    <constraint firstAttribute="centerY" secondItem="TLC-44-PUD" secondAttribute="centerY" id="vNa-Uc-YZz"/>
+                    <constraint firstAttribute="trailing" secondItem="daG-f0-yXj" secondAttribute="trailing" constant="20" id="vkM-dm-vMO"/>
+                    <constraint firstAttribute="bottom" secondItem="3lv-1g-mNy" secondAttribute="bottom" id="wQ0-h3-XkV"/>
+                    <constraint firstItem="TLC-44-PUD" firstAttribute="leading" secondItem="daG-f0-yXj" secondAttribute="trailing" constant="20" id="y5E-vb-oF7"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="vkM-dm-vMO"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellSeparatorHeightConstraint" destination="8Lm-lM-ygn" id="rek-IB-i1a"/>
+                <outlet property="cellSeparatorLeadingConstraint" destination="ag2-rV-qno" id="fV6-fF-r0O"/>
+                <outlet property="ibLabelValue" destination="daG-f0-yXj" id="Mhx-Ma-wOA"/>
+                <outlet property="ibRankLabel" destination="TLC-44-PUD" id="LpF-BO-62o"/>
+                <outlet property="ibSeparatorLineView" destination="3lv-1g-mNy" id="YPk-cW-i5V"/>
+            </connections>
+            <point key="canvasLocation" x="159" y="156.5"/>
+        </tableViewCell>
+    </objects>
+</document>

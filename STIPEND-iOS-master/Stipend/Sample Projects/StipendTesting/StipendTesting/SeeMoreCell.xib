@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeeMoreCell" id="KGk-i7-Jjw" customClass="SeeMoreCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjR-Zv-Rog">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <state key="normal" title="See More...">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QsM-bB-q3h"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="OjR-Zv-Rog" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4x9-9m-gYN"/>
+                    <constraint firstAttribute="bottom" secondItem="OjR-Zv-Rog" secondAttribute="bottom" id="Q5j-8T-rPa"/>
+                    <constraint firstItem="OjR-Zv-Rog" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vty-Rt-fyK"/>
+                    <constraint firstAttribute="trailing" secondItem="OjR-Zv-Rog" secondAttribute="trailing" id="j5W-uI-JwH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ibTapButton" destination="OjR-Zv-Rog" id="kGp-e8-7bj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

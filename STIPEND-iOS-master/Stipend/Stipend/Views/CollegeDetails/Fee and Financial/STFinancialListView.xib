@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STFinancialListView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1B-KD-5bB" userLabel="SeparatorView">
+                    <rect key="frame" x="15" y="49" width="385" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="aOd-gB-eJ5"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Books &amp; Supplies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tV6-Ps-pPc" userLabel="LeftLabel">
+                    <rect key="frame" x="15" y="13" width="280" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Erc-Y7-xqW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                    <color key="textColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$52,477" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwY-Dz-JlS" userLabel="RightLabel">
+                    <rect key="frame" x="300" y="15" width="85" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="VSD-6G-R8D"/>
+                        <constraint firstAttribute="width" constant="85" id="oXV-1t-lGi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="18"/>
+                    <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KwY-Dz-JlS" secondAttribute="trailing" constant="15" id="2e2-kW-SQy"/>
+                <constraint firstItem="KwY-Dz-JlS" firstAttribute="leading" secondItem="tV6-Ps-pPc" secondAttribute="trailing" constant="5" id="7PQ-0J-6SM"/>
+                <constraint firstItem="b1B-KD-5bB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Ocp-Jv-PfF"/>
+                <constraint firstAttribute="centerY" secondItem="tV6-Ps-pPc" secondAttribute="centerY" id="QNK-R4-M4l"/>
+                <constraint firstItem="tV6-Ps-pPc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="XPe-RD-TAT"/>
+                <constraint firstAttribute="centerY" secondItem="KwY-Dz-JlS" secondAttribute="centerY" id="a5f-DD-9CB"/>
+                <constraint firstAttribute="trailing" secondItem="b1B-KD-5bB" secondAttribute="trailing" id="iRi-ae-uQM"/>
+                <constraint firstAttribute="bottom" secondItem="b1B-KD-5bB" secondAttribute="bottom" id="jf1-RG-EW6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cellSeparatorHeightConstraint" destination="aOd-gB-eJ5" id="oGb-cd-bEo"/>
+                <outlet property="ibLabelField" destination="tV6-Ps-pPc" id="upf-d3-nRp"/>
+                <outlet property="ibLabelValue" destination="KwY-Dz-JlS" id="roI-Kf-A7w"/>
+                <outlet property="ibSeparatorLine" destination="b1B-KD-5bB" id="wSL-PH-0Jh"/>
+            </connections>
+            <point key="canvasLocation" x="300" y="0.0"/>
+        </view>
+    </objects>
+</document>
